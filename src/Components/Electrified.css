@@ -1,0 +1,430 @@
+.Electrified {
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8dvh;
+}
+
+.header {
+    width: 100dvw;
+    height: 40dvh;
+    background-color: rgb(9, 8, 8);
+    display: flex;
+    align-items: center;
+}
+
+.st-cart {
+    width: 50dvw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20dvw;
+}
+
+.st-cart span {
+    font-size: 20px;
+    color: #b0b8c0;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.st-cart h1 {
+    font-size: 48px;
+    color: #ffffff;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.nd-cart {
+    width: 50dvw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10dvh;
+    gap: 4dvh;
+}
+
+.nd-cart p {
+    width: 60%;
+    color: #ffffff;
+    line-height: 32px;
+    font-size: 22px;
+}
+
+.btns {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 3dvw;
+}
+
+.btns button:nth-child(1) {
+    width: 15dvw;
+    height: 5dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1dvw;
+    background: none;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 15px;
+
+    font-size: 18px;
+}
+
+.btns button:nth-child(2) {
+    width: 13dvw;
+    height: 5dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1dvw;
+    background: none;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.btns button:hover img {
+    transform: translateX(10px);
+}
+
+.btns button:hover {
+    background-color: #adadad;
+}
+
+.btns button:nth-child(2):hover {
+    background-color: #78787866;
+}
+
+.btns button img {
+    width: 2dvw;
+    height: 2dvh;
+    transition: all 0.2s ease-in-out;
+}
+
+.second-card img {
+    width: 100dvw;
+}
+
+
+
+
+.third-card {
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10dvh 0;
+}
+
+.third-card h1 {
+    font-size: 38px;
+    text-transform: uppercase;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.third-card p {
+    margin-top: 3dvh;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 400;
+    width: 48dvw;
+    color: #212529;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.tripple-cards {
+    width: 100dvw;
+    height: 45dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3dvw;
+    margin-top: 5dvh;
+}
+
+.one {
+    width: 25dvw;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1dvh;
+    border-bottom: 1px solid #212529;
+}
+
+.one img {
+    width: 3dvw;
+    height: 5dvh;
+}
+
+.one span {
+    width: 5dvw;
+    border-bottom: 1px solid black;
+}
+
+.one h2 {
+    font-size: 32px;
+    color: #212529;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.one p {
+    margin-top: 0;
+    width: 80%;
+    color: #212529;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.btn {
+    width: 10dvw;
+    height: 5dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5dvh;
+    border: none;
+    border-radius: 10px;
+    background-color: #20365c;
+
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.btn img {
+    width: 1.7dvw;
+    height: 3dvh;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #495d7f;
+}
+
+.btn:hover img {
+    transform: translateX(8px);
+}
+
+.fourth-card {
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fourth-card h1 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #212529;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.info-cards {
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5dvh;
+    margin-top: 10dvh;
+}
+
+.info {
+    display: flex;
+    width: 75dvw;
+    height: 40dvh;
+    background-color: #bcd0e7;
+}
+
+.info img {
+    width: 50dvw;
+    height: 100%;
+}
+
+.left {
+    width: 50dvw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3dvw;
+    gap: 1dvh;
+}
+
+.left button {
+    width: 10dvw;
+    height: 5dvh;
+    display: flex;
+    align-items: center;
+    gap: 0.5dvw;
+    background: none;
+    border: none;
+    padding-top: 0;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.left button:hover {
+    border-bottom: 1px solid black;
+
+    color: #757b81;
+}
+
+.left button img {
+    width: 1.2dvw;
+    height: 3dvh;
+}
+
+.left span {
+    width: 5dvw;
+    border-bottom: 1px solid black;
+}
+
+.left p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #212529;
+    letter-spacing: 1px;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.left h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #212529;
+    letter-spacing: 1px;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+
+
+
+.fifth-cards {
+    width: 100dvw;
+    height: 55dvh;
+    background-color: #bcd0e7;
+    margin-top: 10dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5dvw;
+    margin-bottom: 10dvh;
+}
+
+.first-cart {
+    width: 22dvw;
+    height: 85%;
+    display: flex;
+    gap: 1dvh;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.first-cart img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 1dvh;
+}
+
+
+
+.first-cart button {
+    display: flex;
+    align-items: center;
+    width: 8dvw;
+    height: 4dvh;
+    gap: 0.5dvw;
+    border: none;
+    background: none;
+
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 1dvw;
+}
+
+.first-cart button:hover {
+    border-bottom: 1px solid black;
+    color: #757b81;
+}
+
+.first-cart button img {
+    width: 1dvw;
+    margin-top: 1dvh;
+}
+
+.first-cart p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #212529;
+    margin-left: 1dvw;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.first-cart h2 {
+    font-size: 28px;
+    margin-left: 1dvw;
+    color: #212529;
+    font-weight: 400;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.sixth-cards {
+    width: 100dvw;
+    height: 35dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8dvh;
+    background-color: #000000;
+}
+
+.sixth-cards h1 {
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.buttons{
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3dvh;
+    gap: 5dvw;
+}
+
+.buttons button{
+    width: 10dvw;
+    height: 5dvh;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5dvw;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.buttons button img{
+    width: 1.5dvw;
+}
+
+.buttons button:hover{
+    color: #757b81;
+    border-bottom: 1.5px solid #ffffff;
+}

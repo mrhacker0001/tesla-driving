@@ -1,0 +1,501 @@
+.Newcards {
+    width: 100dvw;
+    height: 110dvh;
+    background-color: #0c0c0c;
+    display: flex;
+    padding-top: 8dvh;
+}
+
+button {
+    cursor: pointer;
+}
+
+.left-card {
+    width: 25dvw;
+    height: 92dvh;
+    position: fixed;
+    border-right: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 15dvh;
+}
+
+.left-card button {
+    width: 18dvw;
+    height: 5dvh;
+    border: none;
+    background: none;
+    text-align: start;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.left-card:hover button {
+    color: #353535;
+}
+
+.left-card button:hover {
+    color: #fff;
+}
+
+.right-card {
+    width: 75dvw;
+    height: 100dvh;
+    margin-left: 25dvw;
+    padding-top: 10dvh;
+    padding-left: 10dvh;
+    position: fixed;
+}
+
+.sedan-cart {
+    width: 95%;
+    height: 80dvh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4dvw;
+    overflow: scroll;
+    padding: 3dvh;
+}
+
+.sedans {
+    width: 18dvw;
+    height: 39dvh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.sedans img {
+    width: 100%;
+    height: 20dvh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.sedans h2 {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.sedans span {
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.sedans button {
+    width: 90%;
+    height: 10%;
+    border: none;
+    background: none;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.sedans button img {
+    width: 15%;
+    height: 60%;
+}
+
+.sedans img:hover {
+    transform: scale(1.05);
+}
+
+.hatchback-card {
+    width: 95%;
+    height: 80dvh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4dvw;
+    overflow: scroll;
+    padding: 3dvh;
+}
+
+.hatchbacks {
+    width: 18dvw;
+    height: 39dvh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.hatchbacks img {
+    width: 100%;
+    height: 20dvh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.hatchbacks h2 {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.hatchbacks span {
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.hatchbacks button {
+    width: 90%;
+    height: 10%;
+    border: none;
+    background: none;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.hatchbacks button img {
+    width: 15%;
+    height: 60%;
+}
+
+.hatchbacks img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.coupe-card {
+    width: 95%;
+    height: 80dvh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4dvw;
+    overflow: scroll;
+    padding: 3dvh;
+}
+
+.coupes {
+    width: 18dvw;
+    height: 39dvh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.coupes img {
+    width: 100%;
+    height: 20dvh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.coupes h2 {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.coupes span {
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.coupes button {
+    width: 90%;
+    height: 10%;
+    border: none;
+    background: none;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.coupes button img {
+    width: 15%;
+    height: 60%;
+}
+
+.coupes img:hover {
+    transform: scale(1.05);
+}
+
+
+
+.pickup-card {
+    width: 95%;
+    height: 80dvh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4dvw;
+    overflow: scroll;
+    padding: 3dvh;
+}
+
+.pickups {
+    width: 18dvw;
+    height: 39dvh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.pickups img {
+    width: 100%;
+    height: 20dvh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.pickups h2 {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.pickups span {
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.pickups button {
+    width: 90%;
+    height: 10%;
+    border: none;
+    background: none;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.pickups button img {
+    width: 15%;
+    height: 60%;
+}
+
+.pickups img:hover {
+    transform: scale(1.05);
+}
+
+
+.electric-card {
+    width: 95%;
+    height: 80dvh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4dvw;
+    overflow: scroll;
+    padding: 3dvh;
+}
+
+.electrics {
+    width: 18dvw;
+    height: 39dvh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.electrics img {
+    width: 100%;
+    height: 20dvh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.electrics h2 {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.electrics span {
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.electrics button {
+    width: 90%;
+    height: 10%;
+    border: none;
+    background: none;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.electrics button img {
+    width: 15%;
+    height: 60%;
+}
+
+.electrics img:hover {
+    transform: scale(1.05);
+}
+
+
+
+.luxury-card {
+    width: 95%;
+    height: 80dvh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4dvw;
+    overflow: scroll;
+    padding: 3dvh;
+}
+
+.luxuries {
+    width: 18dvw;
+    height: 39dvh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.luxuries img {
+    width: 100%;
+    height: 20dvh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.luxuries h2 {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.luxuries span {
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.luxuries button {
+    width: 90%;
+    height: 10%;
+    border: none;
+    background: none;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.luxuries button img {
+    width: 15%;
+    height: 60%;
+}
+
+.luxuries img:hover {
+    transform: scale(1.05);
+}
+
+
+.hybrid-card {
+    width: 95%;
+    height: 80dvh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4dvw;
+    overflow: scroll;
+    padding: 3dvh;
+}
+
+.hybrids {
+    width: 18dvw;
+    height: 39dvh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.hybrids img {
+    width: 100%;
+    height: 20dvh;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.hybrids h2 {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.hybrids span {
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.hybrids button {
+    width: 90%;
+    height: 10%;
+    border: none;
+    background: none;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.hybrids button img {
+    width: 15%;
+    height: 60%;
+}
+
+.hybrids img:hover {
+    transform: scale(1.05);
+}
