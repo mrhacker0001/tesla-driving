@@ -13,7 +13,7 @@ function Navbar() {
                 <NavLink to='/Electrified'><button>Electrified </button></NavLink>
                 <NavLink to='/Business'><button>Business</button></NavLink>
                 <NavLink to='/Owners'><button>Owners</button></NavLink>
-                <NavLink to='Discover Lexus'><button>Discover Lexus</button></NavLink>
+                <NavLink to='/DiscoverLexus'><button>Discover Lexus</button></NavLink>
                 <NavLink to='Lexus X ATP Tour'><button>Lexus X ATP Tour</button></NavLink>
             </div>
             <div className="search-panel">

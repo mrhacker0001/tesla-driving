@@ -7,18 +7,20 @@ import Business from './Business'
 import Owners from './Owners'
 import Home from './Home'
 import Belgium from './Belgium'
+import DiscoverLexus from './DiscoverLexus'
 
 function Main() {
     return (
         <div className='Main'>
             <Navbar />
             <Routes>
-            <Route path='/' element={<Home />} />
+                <Route path='/' element={<Home />} />
                 <Route path='/Newcards' element={<Newcards />} />
                 <Route path='/Electrified' element={<Electrified />} />
                 <Route path='/Business' element={<Business />} />
                 <Route path='/Owners' element={<Owners />} />
-                <Route path='/Belgium' element={<Belgium/>} />
+                <Route path='/DiscoverLexus' element={<DiscoverLexus />} />
+                <Route path='/Belgium' element={<Belgium />} />
             </Routes>
         </div>
     )

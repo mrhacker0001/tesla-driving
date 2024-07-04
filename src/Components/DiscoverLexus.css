@@ -1,0 +1,16 @@
+.Discover{
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8dvh;
+}
+
+.discoverlexus{
+    width: 100dvw;
+    height: 30dvh;
+    background-color: rgb(9, 8, 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
