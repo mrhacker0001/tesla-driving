@@ -1,0 +1,11 @@
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.Main {
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}

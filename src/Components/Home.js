@@ -4,12 +4,14 @@ import { NavLink } from 'react-router-dom'
 
 function Home() {
   return (
+    <>
     <div className='Home'>
       <div className="First">
           <h2>SELECT A <br /> COUNTRY</h2>
           <p>Please select the relevant country to <br /> continue to your website.</p>
       </div>
       <h4>LEXUX EUROPE</h4>
+      <div className="alll">
       <div className="Countries">
       <button class="flag-icon flag-icon-be"><NavLink to='/Belgium'>Belgium(Français)</NavLink></button>
       <button class="flag-icon flag-icon-at">Austria</button>
@@ -34,7 +36,9 @@ function Home() {
       <button class="flag-icon flag-icon-it">Italy</button>
       <button class="flag-icon flag-icon-lv">Latvia</button>
       </div>
+        </div>
     </div>
+    </>
   )
 }
 

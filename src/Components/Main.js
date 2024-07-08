@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Newcards from './Newcards'
 import Electrified from './Electrified'
@@ -8,11 +7,12 @@ import Owners from './Owners'
 import Home from './Home'
 import Belgium from './Belgium'
 import DiscoverLexus from './DiscoverLexus'
+import LexusTour from './LexusTour'
+import '../App.css'
 
 function Main() {
     return (
         <div className='Main'>
-            <Navbar />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/Newcards' element={<Newcards />} />
@@ -20,6 +20,7 @@ function Main() {
                 <Route path='/Business' element={<Business />} />
                 <Route path='/Owners' element={<Owners />} />
                 <Route path='/DiscoverLexus' element={<DiscoverLexus />} />
+                <Route path='/LexusTour' element={<LexusTour />} />
                 <Route path='/Belgium' element={<Belgium />} />
             </Routes>
         </div>

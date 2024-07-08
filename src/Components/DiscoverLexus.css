@@ -1,16 +1,306 @@
-.Discover{
+.Discover {
     width: 100dvw;
     height: auto;
     display: flex;
     flex-direction: column;
     padding-top: 8dvh;
+    align-items: center;
 }
 
-.discoverlexus{
+.lexusimg {
+    height: 100dvh;
+}
+
+.discoverlexus {
     width: 100dvw;
     height: 30dvh;
     background-color: rgb(9, 8, 8);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.discoverlexus h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvh;
+    font-size: 52px;
+    color: #fff;
+    width: 50dvw;
+    text-align: end;
+
+}
+
+.discoverlexus h1 span {
+    margin-right: 15dvw;
+    font-size: 22px;
+    color: rgb(100, 100, 100);
+}
+
+.discoverleft {
+    width: 50dvw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3dvh;
+}
+
+.discoverleft p {
+    font-size: 18px;
+    width: 60%;
+    color: #fff;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+.discoverleft span {
+    display: flex;
+    align-items: center;
+    gap: 5dvw;
+}
+
+.discoverleft span button:nth-child(1) {
+    width: 14dvw;
+    height: 4dvh;
+    border: none;
+    background: none;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1dvw;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.discoverleft span button:nth-child(1) img {
+    width: 1.5dvw;
+    transition: all 0.3s ease-in-out;
+}
+
+.discoverleft span button:nth-child(2) {
+    width: 10dvw;
+    height: 4dvh;
+    border: 2px solid #fff;
+    background: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6dvw;
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.discoverleft span button:nth-child(2) img {
+    width: 1.5dvw;
+    transition: all 0.3s ease-in-out;
+}
+
+.discoverleft span button:hover img {
+    transform: translateX(10px);
+}
+
+
+.discoverleft span button:nth-child(2):hover {
+    background-color: #c3c3c3;
+}
+
+.discoverleft span button:nth-child(1):hover {
+    background-color: #c3c3c3;
+}
+
+.storylexus {
+    padding-top: 10dvh;
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+    align-items: center;
+}
+
+.storylexus h1 {
+    font-size: 48px;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.storylexus p {
+    width: 50%;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.storylexus b {
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    font-weight: 500;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.lbx-cart {
+    width: 70dvw;
+    height: 35dvh;
+    background-color: #262626;
+    margin: 15dvh 0;
+    display: flex;
+}
+
+.sign {
+    width: 50dvw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3dvw;
+    gap: 1dvh;
+}
+
+.sign button {
+    width: 10dvw;
+    height: 4.5dvh;
+    border: none;
+    background: none;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    color: #363636;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 3dvh;
+}
+
+.sign button img {
+    width: 1.5dvw;
+    height: 3dvh;
+    transition: all 0.2s ease-in-out;
+}
+
+.sign button:hover img {
+    transform: translateX(5px);
+}
+
+.sign button:hover {
+    background-color: #9f9f9f;
+}
+
+
+.sign b {
+    font-size: 18px;
+    color: #bebebe;
+    letter-spacing: 1.3px;
+    font-weight: 400;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.sign h1 {
+    font-size: 32px;
+    letter-spacing: 1.3px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.sign span {
+    width: 3dvw;
+    border-bottom: 2px solid #fff;
+}
+
+.lbx-cart img {
+    width: 50dvw;
+    height: 100%;
+}
+
+.tripple-cards {
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.LIMITLESS {
+    width: 100dvw;
+    height: 40dvh;
+    display: flex;
+    align-items: center;
+    margin-top: 15dvh;
+}
+
+.Guided {
+    width: 50dvw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7dvw;
+    gap: 3dvh;
+}
+
+.Guided b {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.Guided span{
+    width: 5dvw;
+    border-bottom: 2px solid;
+}
+
+.Guided p{
+    font-size: 18px;
+    width: 80%;
+    line-height: 34px;
+    letter-spacing: 1.3px;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+.Guided button{
+    width: 14dvw;
+    height: 4.5dvh;
+    background: none;
+    border-radius: 10px;
+    border: none;
+    background-color: #08023ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.Guided button img{
+    width: 2dvw;
+    transition:all 0.2s ease-in-out;
+}
+
+.Guided button:hover img{
+    transform: translateX(10px);
+}
+
+.Guided button:hover{
+    background-color: #2b236ddd;
+
+}
+
+.itemimg{
+    width: 50dvw;
+    height: 50dvh;
 }

@@ -26,7 +26,6 @@ function Belgium() {
 
     let newValue = value;
 
-    // If the input is a select element with a data-img attribute
     if (name === 'model' && event.target.options[event.target.selectedIndex].getAttribute('data-img')) {
       newValue = {
         value: value,

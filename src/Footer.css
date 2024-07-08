@@ -1,0 +1,179 @@
+
+
+.wrapperr {
+    width: 100%;
+    display: flex;
+}
+
+.accordionn {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordionn .contentBx {
+    position: relative;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.accordionn .contentBx .label {
+    position: relative;
+    padding-bottom: 13px;
+    background: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+    cursor: pointer;
+    display: flex;
+    gap: 50px;
+}
+
+.modall .linee {
+    padding-left: 10px;
+    width: 190px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.249);
+}
+
+.accordionn .contentBx .label::before {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+
+
+.accordionn .contentBx .content {
+    position: relative;
+    background: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    overflow-y: auto;
+    width: 200px;
+}
+
+.accordionn .contentBx.active .content {
+    height: 40px;
+
+}
+
+.content>a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    text-align: center;
+}
+
+.content>a:hover {
+    text-decoration: underline;
+}
+
+.modall {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modall h1 {
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.721);
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.wrapperr {
+    display: flex;
+    width: 100%;
+    background: #e2e8ef;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: #e2e8ef;
+    gap: 50px;
+    padding: 40px;
+}
+
+.divv {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.boxx {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.roww {
+    display: flex;
+    gap: 8px;
+}
+
+.roww a {
+    text-decoration: none;
+    color: black;
+}
+
+.boxx a {
+    text-decoration: none;
+    color: black;
+}
+
+.boxx a:hover {
+    text-decoration: underline;
+}
+
+.boxx p {
+    font-size: 10px;
+}
+
+.faroww {
+    display: flex;
+    gap: 5px;
+    padding-right: 90px;
+}
+
+.faroww a {
+    text-decoration: none;
+    color: black;
+}
+
+.faroww a img:hover {
+    text-decoration: underline;
+}
+
+.faroww a svg {
+    width: 20px;
+    height: 20px;
+}
+
+.salee {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.salee img {
+    width: 100px;
+}

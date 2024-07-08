@@ -1,206 +1,216 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .form-group label {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .Belgium {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .Page {
-    text-align:start;
-    margin-bottom: 20px;
-    margin-top: 44%;
-    margin-right: 70%;
-  }
-  
-  .Cars select {
-    margin-left: 25px;
-    width: 620px;
-    height: 50px;
-    display: flex;
-    align-items: flex-start;
-    border: 1px solid #ccc;
-    padding:10px;
-  }
-  
-  .Cars  p {
-    margin-left: 25px;
-    font-size: 20px;
-  }
-  
-  .radio {
-    margin-left: 28%;
-    color: #939090;
-  }
-  
-  .radio input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.form-group label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+/* .footer {
+  display: none !important;
+} */
+
+
+
+.Belgium {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 19dvh;
+}
+
+.Page {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.Cars select {
+  margin-left: 25px;
+  width: 620px;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.Cars p {
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.radio {
+  margin-left: 28%;
+  color: #939090;
+}
+
+.radio input {
   width: 15px;
   height: 15px;
-  }
-  
-  .radioo {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    margin-top: -30px;
-    margin-left:2%;
-    color: #939090;
-  }
-  
-  .slelct2 {
-    margin-top: 5px;
-  }
-  .slelct2 select {
-    margin-left: 25px;
-    width: 620px;
-    height: 50px;
-    display: flex;
-    align-items: flex-start;
-    border: 1px solid #ccc;
-    padding:10px;
-  }
-  
-  .slelct2  p {
-    margin-left: 25px;
-    font-size: 20px;
-  }
-  
-  .Name input{
-    display: flex;
-    margin-left: 25px;
-    width: 620px;
-    height: 50px;
-    align-items: flex-start;
-    border: 1px solid #ccc;
-    padding:10px;
-  }
-  .Name p {
-    margin-left: 25px;
-  }
-  
-  .Phone p {
-    margin-left: 25px;
-  }
-  
-  .Phone input {
-    display: flex;
-    margin-left: 25px;
-    width: 620px;
-    height: 50px;
-    align-items: flex-start;
-    border: 1px solid #ccc;
-    padding:10px;
-  }
-  
-  .RightSelect select {
-    margin-left: 800px;
-    width: 620px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding:10px;
-  }
-  
-  .RightSelect  p {
-    margin-left: 800px;
-    font-size: 20px;
-  }
-  
-  /* Belgium.css */
-  
-  .Cars select.select1 {
-    width: 620px;
-    padding: 10px;
-    font-size: 16px;
-    appearance: none;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M0 3l1.5-1.5L6 6 10.5 1.5 12 3l-6 6z'/%3E%3C/svg%3E") no-repeat right 12px center/8px 10px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  
-  .Cars select.select1:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
-  .Cars img {
-    max-width: 100px;
-    height: auto;
-    margin-left: 10px;
-  }
-  
-  .Cars select.select1 option {
-    padding: 10px;
-  }
-    
-  .Cars select.select1 option[data-img] {
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding-right: 30px; 
-  }
-  
-  .Restons {
-    margin-bottom: 20px;
-  }
-  
-  .Restons h3 {
-    font-size: 1.5em; 
-    color: #333;
-    margin-left: 20px;
-  }
-  
-  .Restons p {
-    margin-left: 20px;
-    line-height: 1.6;
-  }
-  
-  .Last {
-    margin-top: 20px; 
-  }
-  
-  .Last label {
-    display: block;
-    margin-bottom: 15px; 
-  }
+}
 
-  .Last input {
-    margin-left: 20px;
-  }
-  
-  .Last button {
-    background-color:black; 
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.1em;
-    width: 220px;
-    cursor: pointer;
-    margin-left: 20px;
-  }
-  
-  .hr {
-    margin-top: 20px;
-  }
-  
-  .hr hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-  }
-  
-  .hr p {
-    font-size: 0.9em;
-    color: #666; 
-  }
+.radioo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: -30px;
+  margin-left: 2%;
+  color: #939090;
+}
+
+.slelct2 {
+  margin-top: 5px;
+}
+
+.slelct2 select {
+  margin-left: 25px;
+  width: 620px;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.slelct2 p {
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.Name input {
+  display: flex;
+  margin-left: 25px;
+  width: 620px;
+  height: 50px;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.Name p {
+  margin-left: 25px;
+}
+
+.Phone p {
+  margin-left: 25px;
+}
+
+.Phone input {
+  display: flex;
+  margin-left: 25px;
+  width: 620px;
+  height: 50px;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.RightSelect select {
+  margin-left: 800px;
+  width: 620px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.RightSelect p {
+  margin-left: 800px;
+  font-size: 20px;
+}
+
+/* Belgium.css */
+
+.Cars select.select1 {
+  width: 620px;
+  padding: 10px;
+  font-size: 16px;
+  appearance: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M0 3l1.5-1.5L6 6 10.5 1.5 12 3l-6 6z'/%3E%3C/svg%3E") no-repeat right 12px center/8px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.Cars select.select1:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.Cars img {
+  max-width: 100px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.Cars select.select1 option {
+  padding: 10px;
+}
+
+.Cars select.select1 option[data-img] {
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 30px;
+}
+
+.Restons {
+  margin-bottom: 20px;
+}
+
+.Restons h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-left: 20px;
+}
+
+.Restons p {
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+.Last {
+  margin-top: 20px;
+}
+
+.Last label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.Last input {
+  margin-left: 20px;
+}
+
+.Last button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  width: 220px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.hr {
+  margin-top: 20px;
+}
+
+.hr hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.hr p {
+  font-size: 0.9em;
+  color: #666;
+}

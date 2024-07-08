@@ -14,7 +14,7 @@ function Navbar() {
                 <NavLink to='/Business'><button>Business</button></NavLink>
                 <NavLink to='/Owners'><button>Owners</button></NavLink>
                 <NavLink to='/DiscoverLexus'><button>Discover Lexus</button></NavLink>
-                <NavLink to='Lexus X ATP Tour'><button>Lexus X ATP Tour</button></NavLink>
+                <NavLink to='/LexusTour'><button>Lexus X ATP Tour</button></NavLink>
             </div>
             <div className="search-panel">
                 <img src={search} alt="..." />
