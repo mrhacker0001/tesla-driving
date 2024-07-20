@@ -1,19 +1,20 @@
 .LexusTour {
-    width: 100dvw;
+    width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-top: 8dvh;
+    padding-top: 8vh;
+
 }
 
 .partner {
-    width: 100dvw;
-    height: 35dvh;
+    width: 100vw;
+    height: 35vh;
     background-color: rgb(31, 31, 31);
     display: flex;
     justify-content: center;
-    padding-top: 3dvw;
-    gap: 3dvw;
+    padding-top: 3vw;
+    gap: 3vw;
 }
 
 .partner h1 {
@@ -30,11 +31,225 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.partner p{
-    width: 33dvw;
+.partner p {
+    width: 33vw;
     height: auto;
     font-size: 18px;
     color: #fff;
     line-height: 33px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.second-wrapper {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: rgb(235, 237, 237);
+    margin: 10dvh 0;
+}
+
+.head-text {
+    margin: 7vw;
+}
+
+.head-text h1 {
+    font-weight: 600;
+    font-size: 42px;
+    letter-spacing: 1.5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.head-text span {
+    width: 4vw;
+    border-bottom: 1px solid #000000;
+}
+
+.head-text p {
+    width: 40%;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.Slider {
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    gap: 3vw;
+    padding-left: 10vw;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    width: 35vw;
+    height: 80vh;
+    background-color: #fff;
+    border: 1px solid #000000;
+    transition: all 0.7s ease-in-out;
+}
+
+.carousel-slide:hover .slide-text button {
+    border-bottom: 4px solid #000000;
+}
+
+.carousel-slide:hover {
+    cursor: pointer;
+}
+
+.carousel-slide:hover img {
+    transform: scale(1.2);
+}
+
+span {
+    width: 4vw;
+    border-bottom: 1px solid #000000;
+}
+
+.carousel-img {
+    width: 35vw;
+    height: 60%;
+    overflow: hidden;
+}
+
+.carousel-img img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide-text {
+    width: 100%;
+    height: 40%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.slide-text p {
+    font-size: 16px;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+}
+
+.slide-text button {
+    width: 8.5vw;
+    border: none;
+    background: none;
+    text-align: start;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btnns {
+    width: auto;
+    padding-left: 10vw;
+    display: flex;
+    gap: 2vw;
+}
+
+.btnns button {
+    width: 3dvw;
+    height: 5dvh;
+    border: none;
+    background: none;
+}
+
+.btnns button img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.third-wrapper {
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3dvw;
+}
+
+.euro-card {
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3dvh;
+}
+
+.euro-card h1 {
+    font-size: 46px;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.euro-card p {
+    font-size: 18px;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+    width: 55%;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 35px;
+}
+
+.euro-card p a {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.calendar-card {
+    width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15dvh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5dvh;
+}
+
+.calendar-card h1 {
+    width: 60%;
+    font-size: 46px;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.calendar-card img {
+    width: 60dvw;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.calendar-card img:hover {
+    transform: scale(1.10);
+}
+
+.calendar-card button {
+    width: 20dvw;
+    height: 4dvh;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    background-color: #020e53f4;
+
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.calendar-card button:hover{
+    background-color: #48559af4;
 }

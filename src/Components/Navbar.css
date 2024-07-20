@@ -12,6 +12,7 @@
     justify-content: space-between;
     background-color: #ffffff;
     position: fixed;
+    z-index: 1;
 }
 
 .Navbar img {
@@ -25,7 +26,7 @@
     display: flex;
     align-items: center;
     background-color: #fff;
-    gap: 2%;
+    gap: 4%;
     border-radius: 10px;
 }
 
@@ -73,4 +74,13 @@
 
 .texts button{
     color: black;
+}
+
+.language{
+    width: 3dvw;
+    height: 3dvh;
+    padding: 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
 }
