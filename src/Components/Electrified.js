@@ -6,6 +6,8 @@ import lexus from '../assets/2023-lexus-electrified-overview-rz-hero-alternate-1
 import effecient from '../assets/energy-efficiency.png'
 import convenience from '../assets/convenience.png'
 import silence from '../assets/silence.png'
+import Footer from "../Footer"
+
 
 import img from '../assets/2023-electrified-overview-list-all-elec-1920x1080.webp'
 import img1 from '../assets/2023-electrified-overview-list-plugin-hybrid-1920x1080.webp'
@@ -123,6 +125,7 @@ function Electrified() {
                     <button onClick={() => navigate('/Newcards')}>CHOOSE YOUR LEXUS<img src={nextw} alt="" /></button>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

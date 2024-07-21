@@ -6,6 +6,8 @@ import img1 from '../assets/lexus-business-plus-hero-1920x1080_Large-Landscape.w
 import img2 from '../assets/lexuxs.jpeg'
 import img3 from '../assets/images.jpeg'
 import { useNavigate } from 'react-router-dom'
+import Footer from "../Footer"
+
 
 function Business() {
 
@@ -28,7 +30,7 @@ function Business() {
 
             <div className="middle-cards">
                 {
-                    data.map((item,index)=>(
+                    data.map((item, index) => (
                         <div onClick={() => navigate('/')} key={index} className="second-cart">
                             <img src={item.img} alt="" />
                             <div className="cart">
@@ -39,6 +41,7 @@ function Business() {
                     ))
                 }
             </div>
+            <Footer />
         </div>
     )
 }

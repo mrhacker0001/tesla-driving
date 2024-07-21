@@ -18,10 +18,10 @@ function Navbar() {
             <div className="texts">
                 <NavLink to='/'> <img src={logo} alt="..." /></NavLink>
                 <NavLink to='/Newcards'> <button>{langData.car}</button></NavLink>
-                <NavLink to='/Electrified'><button>Electrified </button></NavLink>
-                <NavLink to='/Business'><button>Business</button></NavLink>
-                <NavLink to='/Owners'><button>Owners</button></NavLink>
-                <NavLink to='/DiscoverLexus'><button>Discover Lexus</button></NavLink>
+                <NavLink to='/Electrified'><button>{langData.elect} </button></NavLink>
+                <NavLink to='/Business'><button>{langData.busines}</button></NavLink>
+                <NavLink to='/Owners'><button>{langData.own}</button></NavLink>
+                <NavLink to='/DiscoverLexus'><button>{langData.dis} </button></NavLink>
                 <NavLink to='/LexusTour'><button>Lexus X ATP Tour</button></NavLink>
             </div>
             <div className="search-panel">

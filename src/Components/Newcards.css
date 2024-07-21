@@ -85,9 +85,11 @@ button {
 }
 
 .sedans span {
-    font-size: 22px;
+    font-size: 18px;
     font-family: sans-serif;
     margin-left: 20px;
+    width: 40%;
+    border-bottom: none;
 }
 
 .sedans button {
@@ -148,9 +150,11 @@ button {
 }
 
 .hatchbacks span {
-    font-size: 22px;
+    font-size: 18px;
     font-family: sans-serif;
     margin-left: 20px;
+    width: 40%;
+    border-bottom: none;
 }
 
 .hatchbacks button {
@@ -214,9 +218,11 @@ button {
 }
 
 .coupes span {
-    font-size: 22px;
+    font-size: 18px;
     font-family: sans-serif;
     margin-left: 20px;
+    width: 40%;
+    border-bottom: none;
 }
 
 .coupes button {
@@ -279,9 +285,11 @@ button {
 }
 
 .pickups span {
-    font-size: 22px;
+    font-size: 18px;
     font-family: sans-serif;
     margin-left: 20px;
+    width: 40%;
+    border-bottom: none;
 }
 
 .pickups button {
@@ -343,9 +351,11 @@ button {
 }
 
 .electrics span {
-    font-size: 22px;
+    font-size: 18px;
     font-family: sans-serif;
     margin-left: 20px;
+    width: 40%;
+    border-bottom: none;
 }
 
 .electrics button {
@@ -408,9 +418,11 @@ button {
 }
 
 .luxuries span {
-    font-size: 22px;
+    font-size: 18px;
     font-family: sans-serif;
     margin-left: 20px;
+    width: 40%;
+    border-bottom: none;
 }
 
 .luxuries button {
@@ -472,9 +484,11 @@ button {
 }
 
 .hybrids span {
-    font-size: 22px;
+    font-size: 18px;
     font-family: sans-serif;
     margin-left: 20px;
+    width: 40%;
+    border-bottom: none;
 }
 
 .hybrids button {

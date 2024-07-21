@@ -8,6 +8,7 @@ import img4 from '../assets/owners/Screenshot 2024-06-27 at 22.31.24.png'
 import img5 from '../assets/owners/Screenshot 2024-06-27 at 22.31.39.png'
 import next from '../assets/right-arrow (2).png'
 import img6 from "../assets/owners/Screenshot 2024-06-27 at 23.35.10.png"
+import Footer from '../Footer'
 function Owners() {
 
     const data = [
@@ -79,7 +80,7 @@ function Owners() {
 
                 </div>
             </div>
-
+            <Footer/>
         </div>
     )
 }

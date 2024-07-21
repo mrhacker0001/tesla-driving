@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setActiveCard } from './Redux/cardSlice';
+import { useStoreState } from "../Components/Redux/selector";
+import locale from "../localization/locale.json";
 import './Newcards.css';
 import Malibu from "../assets/Sedan/Chevrolet Malibu.jpeg";
 import Fusion from "../assets/Sedan/Ford Fusion.jpeg";
@@ -94,97 +96,102 @@ function Newcards() {
         dispatch(setActiveCard(card));
     };
 
+
+    const states = useStoreState();
+    const langData = useMemo(() => locale[states.lang], [states.lang]);
+
+
     const Hatchback = [
-        { img: Golf, name: 'Volkswagen Golf', fuel: 'petrol and hybrid' },
-        { img: Ford, name: 'Ford Focus', fuel: 'petrol and hybrid' },
-        { img: Honda1, name: 'Honda Civic Hatchback', fuel: 'petrol and hybrid' },
-        { img: Toyota1, name: 'Toyota Yaris', fuel: 'petrol and hybrid' },
-        { img: Mazda3, name: 'Mazda3 Hatchback', fuel: 'petrol and hybrid' },
-        { img: Hyundai, name: 'Hyundai i30', fuel: 'petrol and hybrid' },
-        { img: KiaRio, name: 'Kia Rio Hatchback', fuel: 'petrol and hybrid' },
-        { img: Spark, name: 'Chevrolet Spark:', fuel: 'petrol and hybrid' },
-        { img: Cooper, name: 'Mini Cooper', fuel: 'petrol and hybrid' },
-        { img: Subaru1, name: 'Subaru Impreza Hatchback:', fuel: 'petrol and hybrid' },
+        { img: Golf, name: 'Volkswagen Golf', fuel: langData.fuel },
+        { img: Ford, name: 'Ford Focus', fuel: langData.fuel },
+        { img: Honda1, name: 'Honda Civic Hatchback', fuel: langData.fuel },
+        { img: Toyota1, name: 'Toyota Yaris', fuel: langData.fuel },
+        { img: Mazda3, name: 'Mazda3 Hatchback', fuel: langData.fuel },
+        { img: Hyundai, name: 'Hyundai i30', fuel: langData.fuel },
+        { img: KiaRio, name: 'Kia Rio Hatchback', fuel: langData.fuel },
+        { img: Spark, name: 'Chevrolet Spark:', fuel: langData.fuel },
+        { img: Cooper, name: 'Mini Cooper', fuel: langData.fuel },
+        { img: Subaru1, name: 'Subaru Impreza Hatchback:', fuel: langData.fuel },
     ];
 
     const Sedan = [
-        { img: Malibu, name: 'Chevrolet Malibu', fuel: 'petrol and hybrid' },
-        { img: Fusion, name: 'Ford Fusion', fuel: 'petrol and hybrid' },
-        { img: Honda, name: 'Honda Accord', fuel: 'petrol and hybrid' },
-        { img: Sonata, name: 'Hyundai Sonata', fuel: 'petrol and hybrid' },
-        { img: Optima, name: 'Kia Optima', fuel: 'petrol and hybrid' },
-        { img: Mazda6, name: 'Mazda6', fuel: 'petrol and hybrid' },
-        { img: Altima, name: 'Nissan Altima', fuel: 'petrol and hybrid' },
-        { img: Subaru, name: 'Subaru Legacy', fuel: 'petrol and hybrid' },
-        { img: Toyota, name: 'Toyota Camry', fuel: 'petrol and hybrid' },
-        { img: Volkswagen, name: 'Volkswagen Passat', fuel: 'petrol and hybrid' },
+        { img: Malibu, name: 'Chevrolet Malibu', fuel: langData.fuel },
+        { img: Fusion, name: 'Ford Fusion', fuel: langData.fuel },
+        { img: Honda, name: 'Honda Accord', fuel: langData.fuel },
+        { img: Sonata, name: 'Hyundai Sonata', fuel: langData.fuel },
+        { img: Optima, name: 'Kia Optima', fuel: langData.fuel },
+        { img: Mazda6, name: 'Mazda6', fuel: langData.fuel },
+        { img: Altima, name: 'Nissan Altima', fuel: langData.fuel },
+        { img: Subaru, name: 'Subaru Legacy', fuel: langData.fuel },
+        { img: Toyota, name: 'Toyota Camry', fuel: langData.fuel },
+        { img: Volkswagen, name: 'Volkswagen Passat', fuel: langData.fuel },
     ];
 
     const Coupe = [
-        { img: Audi, name: 'Audi A5 Coupe', fuel: 'petrol and hybrid' },
-        { img: BMW, name: 'BMW 4 Series Coupe', fuel: 'petrol and hybrid' },
-        { img: Camaro, name: 'Chevrolet Camaro', fuel: 'petrol and hybrid' },
-        { img: Hondacivic, name: 'Honda Civic Coupe', fuel: 'petrol and hybrid' },
-        { img: Infiniti, name: 'Infiniti Q60', fuel: 'petrol and hybrid' },
-        { img: Lexus, name: 'Lexus RC', fuel: 'petrol and hybrid' },
-        { img: Mercedez, name: 'Mercedes-Benz C-Class Coupe', fuel: 'petrol and hybrid' },
-        { img: Mustang, name: 'Ford Mustang', fuel: 'petrol and hybrid' },
-        { img: Nissan, name: 'Nissan 370Z', fuel: 'petrol and hybrid' },
-        { img: Toyota2, name: 'Toyota 86', fuel: 'petrol and hybrid' },
+        { img: Audi, name: 'Audi A5 Coupe', fuel: langData.fuel },
+        { img: BMW, name: 'BMW 4 Series Coupe', fuel: langData.fuel },
+        { img: Camaro, name: 'Chevrolet Camaro', fuel: langData.fuel },
+        { img: Hondacivic, name: 'Honda Civic Coupe', fuel: langData.fuel },
+        { img: Infiniti, name: 'Infiniti Q60', fuel: langData.fuel },
+        { img: Lexus, name: 'Lexus RC', fuel: langData.fuel },
+        { img: Mercedez, name: 'Mercedes-Benz C-Class Coupe', fuel: langData.fuel },
+        { img: Mustang, name: 'Ford Mustang', fuel: langData.fuel },
+        { img: Nissan, name: 'Nissan 370Z', fuel: langData.fuel },
+        { img: Toyota2, name: 'Toyota 86', fuel: langData.fuel },
     ]
 
     const Pickup = [
-        { img: Colorado, name: 'Chevrolet Colorado', fuel: 'petrol and hybrid' },
-        { img: Fordf, name: 'Ford F-150', fuel: 'petrol and hybrid' },
-        { img: Gladiator, name: 'Jeep Gladiator', fuel: 'petrol and hybrid' },
-        { img: Ram1500, name: 'Ram 1500', fuel: 'petrol and hybrid' },
-        { img: Ranger, name: 'Ford Ranger', fuel: 'petrol and hybrid' },
-        { img: Ridgeline, name: 'Honda Ridgeline', fuel: 'petrol and hybrid' },
-        { img: Sierra, name: 'GMC Sierra 1500', fuel: 'petrol and hybrid' },
-        { img: Titan, name: 'Nissan Titan', fuel: 'petrol and hybrid' },
-        { img: nimadir, name: 'Chevrolet Silverado', fuel: 'petrol and hybrid' },
-        { img: tundra, name: 'Toyota Tundra', fuel: 'petrol and hybrid' },
+        { img: Colorado, name: 'Chevrolet Colorado', fuel: langData.fuel },
+        { img: Fordf, name: 'Ford F-150', fuel: langData.fuel },
+        { img: Gladiator, name: 'Jeep Gladiator', fuel: langData.fuel },
+        { img: Ram1500, name: 'Ram 1500', fuel: langData.fuel },
+        { img: Ranger, name: 'Ford Ranger', fuel: langData.fuel },
+        { img: Ridgeline, name: 'Honda Ridgeline', fuel: langData.fuel },
+        { img: Sierra, name: 'GMC Sierra 1500', fuel: langData.fuel },
+        { img: Titan, name: 'Nissan Titan', fuel: langData.fuel },
+        { img: nimadir, name: 'Chevrolet Silverado', fuel: langData.fuel },
+        { img: tundra, name: 'Toyota Tundra', fuel: langData.fuel },
     ]
 
     const Luxury = [
-        { img: AudiA8, name: 'Audi A8', fuel: 'petrol and hybrid' },
-        { img: Bentley, name: 'Bentley Flying Spur', fuel: 'petrol and hybrid' },
-        { img: Genesis, name: 'Genesis G90', fuel: 'petrol and hybrid' },
-        { img: Jaguar, name: 'Jaguar XJ', fuel: 'petrol and hybrid' },
-        { img: Panamera, name: 'Porsche Panamera', fuel: 'petrol and hybrid' },
-        { img: Rolls, name: 'Rolls-Royce Ghost', fuel: 'petrol and hybrid' },
-        { img: Tesla, name: 'Tesla Model S', fuel: 'petrol and hybrid' },
-        { img: bmw7, name: 'BMW 7 Series', fuel: 'petrol and hybrid' },
-        { img: cobalt, name: 'Chevrolet Cobalt', fuel: 'petrol and hybrid' },
-        { img: lexusLS, name: 'Lexus LS', fuel: 'petrol and hybrid' },
-        { img: mers, name: 'Mercedes-Benz S-Class', fuel: 'petrol and hybrid' },
+        { img: AudiA8, name: 'Audi A8', fuel: langData.fuel },
+        { img: Bentley, name: 'Bentley Flying Spur', fuel: langData.fuel },
+        { img: Genesis, name: 'Genesis G90', fuel: langData.fuel },
+        { img: Jaguar, name: 'Jaguar XJ', fuel: langData.fuel },
+        { img: Panamera, name: 'Porsche Panamera', fuel: langData.fuel },
+        { img: Rolls, name: 'Rolls-Royce Ghost', fuel: langData.fuel },
+        { img: Tesla, name: 'Tesla Model S', fuel: langData.fuel },
+        { img: bmw7, name: 'BMW 7 Series', fuel: langData.fuel },
+        { img: cobalt, name: 'Chevrolet Cobalt', fuel: langData.fuel },
+        { img: lexusLS, name: 'Lexus LS', fuel: langData.fuel },
+        { img: mers, name: 'Mercedes-Benz S-Class', fuel: langData.fuel },
     ]
 
     const Electric = [
-        { img: Audi1, name: 'Audi e-tron', fuel: 'hybrid' },
-        { img: BMW13, name: 'BMW i3', fuel: 'hybrid' },
-        { img: Bolt, name: 'Chevrolet Bolt EV', fuel: 'hybrid' },
-        { img: Kona, name: 'Hyundai Kona Electric', fuel: 'hybrid' },
-        { img: Jaguar1, name: 'Jaguar I-PACE', fuel: 'hybrid' },
-        { img: Soul, name: 'Kia Soul EV', fuel: 'hybrid' },
-        { img: Benz, name: 'Mercedes-Benz EQC', fuel: 'hybrid' },
-        { img: Taycan, name: 'Porsche Taycan', fuel: 'hybrid' },
-        { img: nissanleaf, name: 'Nissan Leaf', fuel: 'hybrid' },
-        { img: Tesla1, name: 'Tesla Model S', fuel: 'hybrid' },
+        { img: Audi1, name: 'Audi e-tron', fuel: langData.fuelh },
+        { img: BMW13, name: 'BMW i3', fuel: langData.fuelh },
+        { img: Bolt, name: 'Chevrolet Bolt EV', fuel: langData.fuelh },
+        { img: Kona, name: 'Hyundai Kona Electric', fuel: langData.fuelh },
+        { img: Jaguar1, name: 'Jaguar I-PACE', fuel: langData.fuelh },
+        { img: Soul, name: 'Kia Soul EV', fuel: langData.fuelh },
+        { img: Benz, name: 'Mercedes-Benz EQC', fuel: langData.fuelh },
+        { img: Taycan, name: 'Porsche Taycan', fuel: langData.fuelh },
+        { img: nissanleaf, name: 'Nissan Leaf', fuel: langData.fuelh },
+        { img: Tesla1, name: 'Tesla Model S', fuel: langData.fuelh },
     ]
 
 
     const Hybrid = [
-        { img: Malibuhy, name: 'Chevrolet Malibu Hybrid', fuel: 'petrol and hybrid' },
-        { img: Ford1, name: 'Ford Fusion Hybrid', fuel: 'petrol and hybrid' },
-        { img: Accord, name: 'Honda Accord Hybrid', fuel: 'petrol and hybrid' },
-        { img: Honda2, name: 'Honda cr-v hybrid', fuel: 'petrol and hybrid' },
-        { img: Ioniq, name: 'Hyundai Ioniq Hybrid', fuel: 'petrol and hybrid' },
-        { img: Optima1, name: 'Kia Optima Hybrid', fuel: 'petrol and hybrid' },
-        { img: Lexus1, name: 'Kia Optima Hybrid', fuel: 'petrol and hybrid' },
-        { img: Camry, name: 'Toyota Camry Hybrid', fuel: 'petrol and hybrid' },
-        { img: RAV4, name: 'Toyota RAV4 Hybrid', fuel: 'petrol and hybrid' },
-        { img: Honda2, name: 'Honda cr-v hybrid', fuel: 'petrol and hybrid' },
+        { img: Malibuhy, name: 'Chevrolet Malibu Hybrid', fuel: langData.fuel },
+        { img: Ford1, name: 'Ford Fusion Hybrid', fuel: langData.fuel },
+        { img: Accord, name: 'Honda Accord Hybrid', fuel: langData.fuel },
+        { img: Honda2, name: 'Honda cr-v hybrid', fuel: langData.fuel },
+        { img: Ioniq, name: 'Hyundai Ioniq Hybrid', fuel: langData.fuel },
+        { img: Optima1, name: 'Kia Optima Hybrid', fuel: langData.fuel },
+        { img: Lexus1, name: 'Kia Optima Hybrid', fuel: langData.fuel },
+        { img: Camry, name: 'Toyota Camry Hybrid', fuel: langData.fuel },
+        { img: RAV4, name: 'Toyota RAV4 Hybrid', fuel: langData.fuel },
+        { img: Honda2, name: 'Honda cr-v hybrid', fuel: langData.fuel },
 
     ]
     return (
@@ -242,7 +249,7 @@ function Newcards() {
                                     <img src={item.img} alt={item.name} />
                                     <h2>{item.name}</h2>
                                     <span>{item.fuel}</span>
-                                    <button>Explore <img src={next} alt="..." /></button>
+                                    <button>{langData.explore}<img src={next} alt="..." /></button>
                                 </div>
                             ))}
                         </div>
@@ -256,7 +263,7 @@ function Newcards() {
                                     <img src={item.img} alt={item.name} />
                                     <h2>{item.name}</h2>
                                     <span>{item.fuel}</span>
-                                    <button>Explore <img src={next} alt="..." /></button>
+                                    <button>{langData.explore}<img src={next} alt="..." /></button>
                                 </div>
                             ))}
                         </div>
@@ -269,7 +276,7 @@ function Newcards() {
                                 <img src={item.img} alt={item.name} />
                                 <h2>{item.name}</h2>
                                 <span>{item.fuel}</span>
-                                <button>Explore <img src={next} alt="..." /></button>
+                                <button>{langData.explore}<img src={next} alt="..." /></button>
                             </div>
                         ))}
                     </div>
@@ -281,7 +288,7 @@ function Newcards() {
                                 <img src={item.img} alt={item.name} />
                                 <h2>{item.name}</h2>
                                 <span>{item.fuel}</span>
-                                <button>Explore <img src={next} alt="..." /></button>
+                                <button>{langData.explore}<img src={next} alt="..." /></button>
                             </div>
                         ))}
                     </div>
@@ -293,7 +300,7 @@ function Newcards() {
                                 <img src={item.img} alt={item.name} />
                                 <h2>{item.name}</h2>
                                 <span>{item.fuel}</span>
-                                <button>Explore <img src={next} alt="..." /></button>
+                                <button>{langData.explore}<img src={next} alt="..." /></button>
                             </div>
                         ))}
                     </div>
@@ -305,7 +312,7 @@ function Newcards() {
                                 <img src={item.img} alt={item.name} />
                                 <h2>{item.name}</h2>
                                 <span>{item.fuel}</span>
-                                <button>Explore <img src={next} alt="..." /></button>
+                                <button>{langData.explore}<img src={next} alt="..." /></button>
                             </div>
                         ))}
                     </div>
@@ -317,7 +324,7 @@ function Newcards() {
                                 <img src={item.img} alt={item.name} />
                                 <h2>{item.name}</h2>
                                 <span>{item.fuel}</span>
-                                <button>Explore <img src={next} alt="..." /></button>
+                                <button>{langData.explore}<img src={next} alt="..." /></button>
                             </div>
                         ))}
                     </div>

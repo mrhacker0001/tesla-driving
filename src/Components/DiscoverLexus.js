@@ -8,6 +8,8 @@ import lexus2 from '../assets/2024-discover-lexus-intuitive-technology-1920x1080
 import lexus3 from '../assets/2023-discover-hub-list-card-craft-1440x1080.webp'
 import lexus5 from '../assets/2024-discover-lexus-experience-amazing-1440x1080-270926.webp'
 import { useNavigate } from 'react-router'
+import Footer from "../Footer"
+
 
 
 function DiscoverLexus() {
@@ -42,7 +44,7 @@ function DiscoverLexus() {
                     <b>LBX NEWSLETTER</b>
                     <h1>BE THE FIRST TO HEAR LBX NEWS</h1>
                     <span></span>
-                    <button onClick={()=> navigate('/')}>SIGN UP NOW <img src={nexts} alt="..." /></button>
+                    <button onClick={() => navigate('/')}>SIGN UP NOW <img src={nexts} alt="..." /></button>
                 </div>
                 <img src={lexus1} alt="..." />
             </div>
@@ -59,12 +61,13 @@ function DiscoverLexus() {
                                 <p>{item.p}</p>
                                 <button>{item.btn} <img src={nextw} alt="" /></button>
                             </div>
-                            <img src={item.img} alt="" className='itemimg'/>
+                            <img src={item.img} alt="" className='itemimg' />
                         </div>
 
                     ))
                 }
             </div>
+            <Footer />
         </div>
     )
 }

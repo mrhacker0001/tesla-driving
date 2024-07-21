@@ -10,6 +10,7 @@ import hamburg from "../assets/carousel/Screenshot 2024-07-19 at 22.57.38.png";
 import right from "../assets/carousel/left-arrow.png";
 import left from "../assets/carousel/arrow-right.png";
 import img1 from "../assets/carousel/Screenshot 2024-07-20 at 15.31.38.png";
+import Footer from '../Footer';
 
 function LexusTour() {
     const data = [
@@ -81,6 +82,7 @@ function LexusTour() {
                     <button>CLICK TO VIEW FULL CALENDAR (JPG)</button>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

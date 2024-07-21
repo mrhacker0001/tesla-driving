@@ -115,7 +115,7 @@
 
 .third-card {
     width: 100dvw;
-    height: auto;
+    height: 150dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,8 +144,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3dvw;
-    margin-top: 5dvh;
+    gap: 4dvw;
+    margin-top: 20dvh;
+
 }
 
 .one {
@@ -192,6 +193,7 @@
     border: none;
     border-radius: 10px;
     background-color: #20365c;
+    margin-top: 5dvw;
 
     font-size: 14px;
     color: #ffffff;

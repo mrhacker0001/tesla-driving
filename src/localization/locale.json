@@ -1,8 +1,26 @@
 {
     "uz": {
-        "car":"Yangi mashinalar"
+        "car": "Yangi mashinalar",
+        "fuel": "benzin va gibrid",
+        "fuelh": "gibrid",
+        "explore": "Tadqiq qilish",
+        "elect": "Elektrlashtirilgan",
+        "busines": "Biznes",
+        "own": "Egalar",
+        "dis": "Lexus-ni kashf eting",
+        "lex":"Lexus X ATP sayohati",
+        "search":"Qidiruv"
     },
     "en": {
-        "car":"New Cards"
+        "car": "New Cards",
+        "fuel": "petrol and hybrid",
+        "fuelh": "hybrid",
+        "explore": "Explore",
+        "elect": "Electrified",
+        "busines": "Business",
+        "own": "Owners",
+        "dis": "Discover Lexus",
+        "lex": "Lexus X ATP Tour",
+        "search": "Search"
     }
 }
