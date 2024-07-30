@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import './Business.css'
 import landing from '../assets/lexus-business-landing-hero-1920x1080_Large-Landscape.webp'
 import img from '../assets/lexus-business-finance-and-insurance-hero-1920x1080_Large-Landscape.webp'
@@ -8,23 +8,29 @@ import img3 from '../assets/images.jpeg'
 import { useNavigate } from 'react-router-dom'
 import Footer from "../Footer"
 
+import { useStoreState } from "../Components/Redux/selector";
+import locale from "../localization/locale.json";
+
 
 function Business() {
+
+    const states = useStoreState();
+    const langData = useMemo(() => locale[states.lang], [states.lang]);
 
     const navigate = useNavigate();
 
     const data = [
-        { img: img1, span: 'DISCOVER MORE', h2: 'BUSINESS PLUS' },
-        { img: img3, span: 'DISCOVER MORE', h2: 'BUSINESS CENTRES' },
-        { img: img2, span: 'DISCOVER MORE', h2: 'FINANCE & INSURANCE' },
-        { img: img, span: 'DISCOVER MORE', h2: 'HYBRID FOR BUSINESS' },
+        { img: img1, span: langData.discover, h2: langData.plus },
+        { img: img3, span: langData.discover, h2: langData.centre },
+        { img: img2, span: langData.discover, h2: langData.finance },
+        { img: img, span: langData.discover, h2: langData.business },
     ]
 
     return (
         <div className='Business'>
             <div className="top-cart">
-                <h1><span>WELCOME TO</span>LEXUS BUSINESS</h1>
-                <p>With a wide choice of Lexus models, including self-charging hybrid and all-electric vehicles, it has never been easier to choose your company car or reduce costs, minimise emissions and transform your fleet.</p>
+                <h1><span>{langData.wel}</span>{langData.busin}</h1>
+                <p>{langData.with}</p>
             </div>
             <img src={landing} alt="" />
 

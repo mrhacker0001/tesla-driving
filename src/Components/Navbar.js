@@ -17,7 +17,7 @@ function Navbar() {
         <div className='Navbar'>
             <div className="texts">
                 <NavLink to='/'> <img src={logo} alt="..." /></NavLink>
-                <NavLink to='/Newcards'> <button>{langData.car}</button></NavLink>
+                <NavLink to='/Newcards'> <button>{langData.car1}</button></NavLink>
                 <NavLink to='/Electrified'><button>{langData.elect} </button></NavLink>
                 <NavLink to='/Business'><button>{langData.busines}</button></NavLink>
                 <NavLink to='/Owners'><button>{langData.own}</button></NavLink>

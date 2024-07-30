@@ -8,6 +8,7 @@
 }
 
 .lexusimg {
+    width: 100dvw;
     height: 100dvh;
 }
 
@@ -21,18 +22,17 @@
 }
 
 .discoverlexus h1 {
+    width: 50dvw;
     display: flex;
     flex-direction: column;
     gap: 1dvh;
     font-size: 52px;
     color: #fff;
     width: 50dvw;
-    text-align: end;
-
+    padding-left: 25dvw;
 }
 
 .discoverlexus h1 span {
-    margin-right: 15dvw;
     font-size: 22px;
     color: rgb(100, 100, 100);
 }
@@ -57,13 +57,16 @@
 }
 
 .discoverleft span {
+    width: 50dvw;
     display: flex;
     align-items: center;
-    gap: 5dvw;
+    gap: 3dvw;
+    padding-left: 10dvw;
 }
 
+
 .discoverleft span button:nth-child(1) {
-    width: 14dvw;
+    width: 18dvw;
     height: 4dvh;
     border: none;
     background: none;
@@ -74,7 +77,7 @@
     justify-content: center;
     gap: 1dvw;
 
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -84,7 +87,7 @@
 }
 
 .discoverleft span button:nth-child(2) {
-    width: 10dvw;
+    width: 12dvw;
     height: 4dvh;
     border: 2px solid #fff;
     background: none;
@@ -160,12 +163,12 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 3dvw;
+    padding: 2dvw;
     gap: 1dvh;
 }
 
 .sign button {
-    width: 10dvw;
+    width: 15dvw;
     height: 4.5dvh;
     border: none;
     background: none;
@@ -199,7 +202,7 @@
 
 .sign b {
     font-size: 18px;
-    color: #bebebe;
+    color: #d8d7d7;
     letter-spacing: 1.3px;
     font-weight: 400;
     font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
@@ -228,7 +231,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 10dvh;
 }
 
 .LIMITLESS {
@@ -256,12 +259,12 @@
     font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
 }
 
-.Guided span{
+.Guided span {
     width: 5dvw;
     border-bottom: 2px solid;
 }
 
-.Guided p{
+.Guided p {
     font-size: 18px;
     width: 80%;
     line-height: 34px;
@@ -269,7 +272,7 @@
     font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
 }
 
-.Guided button{
+.Guided button {
     width: 14dvw;
     height: 4.5dvh;
     background: none;
@@ -286,21 +289,21 @@
     font-weight: 600;
 }
 
-.Guided button img{
+.Guided button img {
     width: 2dvw;
-    transition:all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
-.Guided button:hover img{
+.Guided button:hover img {
     transform: translateX(10px);
 }
 
-.Guided button:hover{
+.Guided button:hover {
     background-color: #2b236ddd;
 
 }
 
-.itemimg{
+.itemimg {
     width: 50dvw;
     height: 50dvh;
 }

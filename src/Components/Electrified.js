@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import "./Electrified.css"
 import next from '../assets/right-arrow.png'
 import nextw from '../assets/right-arrow (2).png'
@@ -18,20 +18,25 @@ import img4 from '../assets/2022-dxp-lexus-retailer-next-steps-1920x1080_Small-L
 import img5 from '../assets/2023-electrified-battery-range-reference-1080x1080_Small-Landscape.webp'
 import img6 from '../assets/2023-electrified-charging-reference-1080x1080_Small-Landscape.webp'
 import { useNavigate } from 'react-router-dom'
+import { useStoreState } from "../Components/Redux/selector";
+import locale from "../localization/locale.json";
 
 function Electrified() {
 
+    const states = useStoreState();
+    const langData = useMemo(() => locale[states.lang], [states.lang]);
+
     const data = [
-        { for: 'FOR CONTENTMENT', fuel: 'ALL-ELECTRIC', btn: 'LEARN MORE', img: img },
-        { for: 'FOR CONVENIENCE', fuel: 'PLUG-IN HYBRID', btn: 'LEARN MORE', img: img1 },
-        { for: 'FOR FREEDOM', fuel: 'SELF-CHARGING HYBRID', btn: 'LEARN MORE', img: img2 },
-        { for: 'FOR EXHILARATION', fuel: 'PERFORMANCE HYBRID', btn: 'LEARN MORE', img: img3 },
+        { for: langData.for, fuel: langData.fuel1, btn: langData.learn, img: img },
+        { for: langData.for1, fuel: langData.fuel2, btn: langData.learn, img: img1 },
+        { for: langData.for2, fuel: langData.fuel3, btn: langData.learn, img: img2 },
+        { for: langData.for3, fuel: langData.fuel4, btn: langData.learn, img: img3 },
     ]
 
     const data1 = [
-        { img: img4, p: 'Forms', h2: 'FIND A RETAILER', btn: 'SEE MORE' },
-        { img: img5, p: 'GO BEYOND', h2: 'SEE BATTERY RANGE', btn: 'SEE MORE' },
-        { img: img6, p: 'SMART SOLUTIONS', h2: 'DISCOVER CHARGING', btn: 'SEE MORE' },
+        { img: img4, p: langData.p12, h2: langData.h5, btn: langData.see },
+        { img: img5, p: langData.p13, h2: langData.h6, btn: langData.see },
+        { img: img6, p: langData.p14, h2: langData.h7, btn: langData.see },
     ]
 
     const navigate = useNavigate()
@@ -40,15 +45,15 @@ function Electrified() {
         <div className='Electrified'>
             <div className="header">
                 <div className="st-cart">
-                    <span>INTRODUCING</span>
-                    <h1>LEXUS ELECTRIFIED</h1>
+                    <span>{langData.intro}</span>
+                    <h1>{langData.lex4}</h1>
                 </div>
 
                 <div className="nd-cart">
-                    <p>Enhancing experiences both in and out of your vehicle, we’re proud to be pioneering and perfecting in electrification. Offering uncompromised performance and range choice that embodies personal luxury, discover Lexus Electrified.</p>
+                    <p>{langData.enhance}</p>
                     <div className="btns">
-                        <button>BROWSE VEHICLES <img src={next} alt="..." /></button>
-                        <button onClick={() => navigate('/')}>FIND A CENTRE <img src={nextw} alt="..." /></button>
+                        <button>{langData.vehicle}<img src={next} alt="..." /></button>
+                        <button onClick={() => navigate('/')}>{langData.find}<img src={nextw} alt="..." /></button>
                     </div>
                 </div>
             </div>
@@ -58,33 +63,33 @@ function Electrified() {
             </div>
 
             <div className="third-card">
-                <h1>THE FUTURE HAS ARRIVED</h1>
-                <p>From a mission to bring tomorrow’s driving pleasure into today, Lexus Electrified was born. Designed to meet every driver’s needs and preferences, we’ve spent over 15 years creating an electrified car range that is cost and energy efficient, accessible and dynamic. All the while possessing the signature technological advances, next level safety, and luxury craft Lexus vehicles are known for. Welcome to your electrified future.</p>
+                <h1>{langData.future}</h1>
+                <p>{langData.mission}</p>
                 <div className="tripple-cards">
                     <div className="one">
                         <img src={effecient} alt="..." />
-                        <h2>EFFICIENT</h2>
+                        <h2>{langData.effic}</h2>
                         <span></span>
-                        <p>Alongside reducing emissions, our electrified car range also significantly cuts vehicle running costs.</p>
+                        <p>{langData.along}</p>
                     </div>
                     <div className="one">
                         <img src={convenience} alt="..." />
-                        <h2>CONVENIENT</h2>
+                        <h2>{langData.con}</h2>
                         <span></span>
-                        <p>Choose from a diverse range of electrified cars to suit your lifestyle, from all-electric to hybrid models.</p>
+                        <p>{langData.driver}</p>
                     </div>
                     <div className="one">
                         <img src={silence} alt="..." />
-                        <h2>QUIET</h2>
+                        <h2>{langData.quiet}</h2>
                         <span></span>
-                        <p>Drive with peace and quiet for company, without compromising on driving pleasure and performance.</p>
+                        <p>{langData.peace}</p>
                     </div>
                 </div>
-                <button className='btn'>MORE BENEFITS <img src={nextw} alt="" /></button>
+                <button className='btn'>{langData.benefit}<img src={nextw} alt="" /></button>
             </div>
 
             <div className="fourth-card">
-                <h1>EXPLORE OUR ELECTRIFIED RANGE</h1>
+                <h1>{langData.exploree}</h1>
                 <div className="info-cards">
                     {
                         data.map((item, index) => (
@@ -118,11 +123,11 @@ function Electrified() {
             </div>
 
             <div className="sixth-cards">
-                <h1>EXPERIENCE LEXUS</h1>
+                <h1>{langData.exp}</h1>
                 <div className="buttons">
-                    <button onClick={() => navigate('/')}>FIND A CENTRE <img src={nextw} alt="" /></button>
-                    <button onClick={() => navigate('/')}>BOOK A TEST DRIVE<img src={nextw} alt="" /></button>
-                    <button onClick={() => navigate('/Newcards')}>CHOOSE YOUR LEXUS<img src={nextw} alt="" /></button>
+                    <button onClick={() => navigate('/')}>{langData.find}<img src={nextw} alt="" /></button>
+                    <button onClick={() => navigate('/')}>{langData.book}<img src={nextw} alt="" /></button>
+                    <button onClick={() => navigate('/Newcards')}>{langData.choose}<img src={nextw} alt="" /></button>
                 </div>
             </div>
             <Footer />

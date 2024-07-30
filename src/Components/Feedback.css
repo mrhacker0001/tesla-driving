@@ -1,0 +1,91 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5dvw;
+}
+
+.big {
+    display: flex;
+    flex-direction: column;
+}
+
+.big>h1,
+h3 {
+    text-align: center;
+    color: black;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    font-family: "Nobel Regular", helvetica, arial, roboto, sans-serif;
+}
+
+#big {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#big>.stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars>p {
+    width: 30px;
+    font-size: 30px;
+    color: rgb(121, 116, 116);
+}
+
+.stars>p:hover {
+    height: 40px;
+    color: yellow;
+    cursor: pointer;
+}
+
+#big .button {
+    width: 60%;
+    height: 55px;
+    /* border-radius: 10px; */
+    border: none;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    width: 90%;
+    transform: scaleX(2);
+
+    height: 20vh;
+}
+
+.button h3 {
+    color: #fff;
+    font-size: 10px;
+}
+
+.button .line {
+    width: 22px;
+    height: 1px;
+    background: #fff;
+    animation-name: line;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 13px;
+    }
+}

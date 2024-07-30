@@ -1,45 +1,52 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import "./Home.css"
 import { NavLink } from 'react-router-dom'
-import Footer from "../Footer"
+import { useStoreState } from "../Components/Redux/selector";
+import locale from "../localization/locale.json";
+import Feedback from './Feedback';
+
 
 function Home() {
+
+  const states = useStoreState();
+  const langData = useMemo(() => locale[states.lang], [states.lang]);
+
   return (
     <>
       <div className='Home'>
         <div className="First">
-          <h2>SELECT A <br /> COUNTRY</h2>
-          <p>Please select the relevant country to <br /> continue to your website.</p>
+          <h2>{langData.country}<br />{langData.select}</h2>
+          <p>{langData.relevant} <br />{langData.please}</p>
         </div>
-        <h4>LEXUX EUROPE</h4>
+        <h4>{langData.lexux}</h4>
         <div className="alll">
           <div className="Countries">
-            <button class="flag-icon flag-icon-be"><NavLink to='/Belgium'>Belgium(Français)</NavLink></button>
-            <button class="flag-icon flag-icon-at">Austria</button>
-            <button class="flag-icon flag-icon-az">Azerbijan</button>
-            <button class="flag-icon flag-icon-bg">Bulgaria</button>
-            <button class="flag-icon flag-icon-hr">Croatia</button>
-            <button class="flag-icon flag-icon-cz">CzechRepublic</button>
+            <button class="flag-icon flag-icon-be"><NavLink to='/Belgium'>{langData.belgium}</NavLink></button>
+            <button class="flag-icon flag-icon-at">{langData.austria}</button>
+            <button class="flag-icon flag-icon-az">{langData.azerbijan}</button>
+            <button class="flag-icon flag-icon-bg">{langData.bulgaria}</button>
+            <button class="flag-icon flag-icon-hr">{langData.croatia}</button>
+            <button class="flag-icon flag-icon-cz">{langData.czechrepublic}</button>
           </div>
           <div className="Countries1">
-            <button class="flag-icon flag-icon-dk">Denmark</button>
-            <button class="flag-icon flag-icon-ee">Estoina</button>
-            <button class="flag-icon flag-icon-fi">Finland</button>
-            <button class="flag-icon flag-icon-fr">France</button>
-            <button class="flag-icon flag-icon-ge">Georgia</button>
-            <button class="flag-icon flag-icon-de">Germany</button>
+            <button class="flag-icon flag-icon-dk">{langData.denmark}</button>
+            <button class="flag-icon flag-icon-ee">{langData.estonia}</button>
+            <button class="flag-icon flag-icon-fi">{langData.finland}</button>
+            <button class="flag-icon flag-icon-fr">{langData.france}</button>
+            <button class="flag-icon flag-icon-ge">{langData.georgia}</button>
+            <button class="flag-icon flag-icon-de">{langData.germany}</button>
           </div>
           <div className="Countries2">
-            <button class="flag-icon flag-icon-gr">Greece</button>
-            <button class="flag-icon flag-icon-hu">Hungary</button>
-            <button class="flag-icon flag-icon-is">Iceland</button>
-            <button class="flag-icon flag-icon-ie">Ireland</button>
-            <button class="flag-icon flag-icon-it">Italy</button>
-            <button class="flag-icon flag-icon-lv">Latvia</button>
+            <button class="flag-icon flag-icon-gr">{langData.greece}</button>
+            <button class="flag-icon flag-icon-hu">{langData.hungary}</button>
+            <button class="flag-icon flag-icon-is">{langData.iceland}</button>
+            <button class="flag-icon flag-icon-ie">{langData.ireland}</button>
+            <button class="flag-icon flag-icon-it">{langData.italy}</button>
+            <button class="flag-icon flag-icon-lv">{langData.latvia}</button>
           </div>
         </div>
       </div>
-      <Footer />
+      <Feedback />
     </>
   )
 }
