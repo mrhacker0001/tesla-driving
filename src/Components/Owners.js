@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import './Owners.css'
 import img from '../assets/owners/Screenshot 2024-06-27 at 22.23.37.png'
 import img1 from '../assets/owners/Screenshot 2024-06-27 at 22.26.37.png'
@@ -8,32 +8,37 @@ import img4 from '../assets/owners/Screenshot 2024-06-27 at 22.31.24.png'
 import img5 from '../assets/owners/Screenshot 2024-06-27 at 22.31.39.png'
 import next from '../assets/right-arrow (2).png'
 import img6 from "../assets/owners/Screenshot 2024-06-27 at 23.35.10.png"
-import Footer from '../Footer'
+import { useStoreState } from "../Components/Redux/selector";
+import locale from "../localization/locale.json";
 function Owners() {
 
+
+    const states = useStoreState();
+    const langData = useMemo(() => locale[states.lang], [states.lang]);
+
     const data = [
-        { img: img1, span: 'DISCOVER MORE', h2: 'WARRANTY AND INSURANCE' },
-        { img: img2, span: 'DISCOVER MORE', h2: 'SERVICE AND MAINTENANCE' },
+        { img: img1, span: langData.discover, h2: langData.war },
+        { img: img2, span: langData.discover, h2: langData.service1 },
     ]
 
     const data1 = [
-        { img: img3, span: 'DISCOVER MORE', h2: 'LEXUS LINK AND MULTIMEDIA' },
-        { img: img4, span: 'DISCOVER MORE', h2: 'ACCESSORIES' },
-        { img: img5, span: 'DISCOVER MORE', h2: 'LEXUS GENUINE PARTS' },
+        { img: img3, span: langData.discover, h2: langData.link },
+        { img: img4, span: langData.discover, h2: langData.access },
+        { img: img5, span: langData.discover, h2: langData.part1 },
     ]
 
     return (
         <div className='Owners'>
             <div className="top-cards">
-                <h1><span>LOOKING AFTER YOU</span>OWNERS</h1>
-                <p>Find out why the service Lexus offers its car owners through the vehicle’s life is considered industry-leading.</p>
+                <h1><span>{langData.lokking}</span>{langData.owners}</h1>
+                <p>{langData.find1}</p>
             </div>
             <img src={img} alt="" />
 
             <div className="owners">
-                <h3>OWNERS</h3>
-                <h1>EVERYTHING YOU NEED TO DRIVE</h1>
-                <p>Discover the tailored services designed to take care of your Lexus no matter its age or mileage.</p>
+                <h3>{langData.owners2}</h3>
+                <h1>{langData.everything}</h1>
+                <p>{langData.discover1}</p>
 
                 <div className='owners-cards'>
                     {
@@ -62,25 +67,25 @@ function Owners() {
             </div>
 
             <div className="lexus-card">
-                <h2>OWNERS</h2>
-                <h1>MY LEXUS</h1>
-                <p>We make owning a Lexus personal with a range of online of online services to help you maintain your car and enjoy every journey.</p>
+                <h2>{langData.owners3}</h2>
+                <h1>{langData.mylexus}</h1>
+                <p>{langData.wemake}</p>
                 <div className="lexus-cart">
                     <div className="left">
-                        <h4>MY LEXUS</h4>
-                        <h1>THE BENEFITS OF MY LEXUS</h1>
+                        <h4>{langData.mylexus}</h4>
+                        <h1>{langData.benefits}</h1>
                         <span></span>
-                        <p>Service reminders: When your car is due a service My Lexus will notify you, so you can always stay on top of your car maintenance.</p>
-                        <p>Owner's manuals: Enjoy immediate access to all the detailed information you need to get the most out of your car.</p>
-                        <p>Journey planner: Easily map your next trip and send the details to your Lexus navigation system, wherever you are.</p>
-                        <p>Configure and save: We know that perfection can't be rushed, so you can configure a car to your exact specifications and save it to your account, to view or amend later.</p>
-                        <button>SIGN IN TO MY LEXUS <img src={next} alt="" /></button>
+                        <p>{langData.service}</p>
+                        <p>{langData.ownersmanuals}</p>
+                        <p>{langData.journey}</p>
+                        <p>{langData.configure}</p>
+                        <button>{langData.signin} <img src={next} alt="" /></button>
                     </div>
                     <img src={img6} alt="" />
 
                 </div>
             </div>
-            <Footer/>
+
         </div>
     )
 }

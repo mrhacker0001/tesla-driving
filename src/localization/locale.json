@@ -170,8 +170,34 @@
         "help":"BIZGA YAXSHILISHGA YORDAM BERING",
         "helpful":"Bu sahifa siz izlayotgan narsani topishda qanchalik foydali?",
         "how":"Ushbu sahifani qanday yaxshilashimiz mumkin?",
-        "submit": "FIKRNI YUBORISH "
+        "submit": "FIKRNI YUBORISH ",
 
+
+
+        "lokking": "SIZNI QO'LLAB-QUVVATLASH",
+        "owners": "EGALARI",
+        "find1": "Lexus avtomobillari egalari uchun xizmat ko'rsatish muddati davomida taqdim etiladigan xizmatlarning sohada etakchi hisoblanishining sababini bilib oling.",
+        "owners2": "EGALARI",
+        "everything": "HAYDASH UCHUN SIZGA KERAK BO'LADIGAN HAMMASI",
+        "discover1": "Yoshingiz yoki yurgan masofangizdan qat'i nazar, Lexus avtomobilingizga g'amxo'rlik qilish uchun maxsus xizmatlarni kashf eting.",
+        "more": "KO'PROQ BILISH",
+        "warranty": "KAFOLAT VA SUG'URTA",
+        "lexuslink": "LEXUS LINK VA MULTIMEDIA",
+        "accesories": "AKSESSUARLAR",
+        "lexusgenuine": "LEXUS HAQIQIY ZAPAS QISMLARI",
+        "owners3": "EGALARI",
+        "wemake": "Biz Lexus avtomobiliga egalik qilishni shaxsiylashtiramiz, avtomobilingizni saqlashga va har bir sayohatdan zavqlanishga yordam beradigan onlayn xizmatlar qatorini taqdim etamiz.",
+        "mylexus": "MENING LEXUSIM",
+        "benefits": "MENING LEXUSIM FOYDASI",
+        "service": "Xizmat eslatmalari: Avtomobilingizga xizmat ko'rsatish muddati kelganida, Mening Lexusim sizni xabardor qiladi, shunda avtomobilingizni har doim yaxshi holatda saqlashingiz mumkin.",
+        "ownersmanuals": "Egalarning qo'llanmalari: Avtomobilingizdan maksimal darajada foydalanish uchun kerakli barcha batafsil ma'lumotlarga tezkor kirish imkoniyatiga ega bo'ling.",
+        "journey": "Sayohat rejalashtiruvchisi: Keyingi safaringizni osonlik bilan xaritaga soling va tafsilotlarni Lexus navigatsiya tizimingizga yuboring, qayerda bo'lmasangiz ham.",
+        "signin": "MENING LEXUSIMGA KIRISH",
+        "war":"KAFOLAT VA SUG'URTA",
+        "service1":"SERVICE VA XIZMAT",
+        "link":"LEXUS LINK VA MULTIMEDIA",
+        "access":"AKSESSUARLAR",
+        "part1":"LEXUS HAQIQIY QISMLARI"
 
     },
     "en": {
@@ -347,7 +373,33 @@
         "help":"HELP US IMPROVE",
         "helpful":"How helpful is this page to find what you are looking for?",
         "how":"How can we improve this page?",
-        "submit":"SUBMIT FEEDBACK"
+        "submit":"SUBMIT FEEDBACK",
+
+
+        "lokking": "LOOKING AFTER YOU",
+        "owners": "OWNERS",
+        "find1": "Find out why the service Lexus offers its car owners through the vehicle’s life is considered industry-leading.",
+        "owners2": "OWNERS",
+        "everything": "EVERYTHING YOU NEED TO DRIVE",
+        "discover1": "Discover the tailored services designed to take care of your Lexus no matter its age or mileage.",
+        "more": "DISCOVER MORE",
+        "warranty": "WARRANTY AND INSURANCE",
+        "lexuslink": "LEXUS LINK AND MULTIMEDIA",
+        "accesories": "ACCESSORIES",
+        "lexusgenuine": "LEXUS GENUINE PARTS",
+        "owners3": "OWNERS",
+        "wemake": "We make owning a Lexus personal with a range of online of online services to help you maintain your car and enjoy every journey.",
+        "mylexus": "MY LEXUS",
+        "benefits": "THE BENEFITS OF MY LEXUS",
+        "service": "Service reminders: When your car is due a service My Lexus will notify you, so you can always stay on top of your car maintenance.",
+        "ownersmanuals": "Owner's manuals: Enjoy immediate access to all the detailed information you need to get the most out of your car.",
+        "journey": "Journey planner: Easily map your next trip and send the details to your Lexus navigation system, wherever you are.",
+        "signin": "SIGN IN TO MY LEXUS",
+        "war":"WARRANTY AND INSURANCE",
+        "service1":"SERVICE AND MAINTENANCE",
+        "link":"LEXUS LINK AND MULTIMEDIA",
+        "access":"ACCESSORIES",
+        "part1":"LEXUS GENUINE PARTS"
 
 
     }
