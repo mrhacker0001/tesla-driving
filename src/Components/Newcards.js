@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setActiveCard } from './Redux/cardSlice';
 import { useStoreState } from "../Components/Redux/selector";
@@ -87,6 +87,9 @@ import Lexus1 from "../assets/hybrid/Lexus ES 300h.jpeg"
 import Camry from "../assets/hybrid/Toyota Camry Hybrid.jpeg"
 import RAV4 from "../assets/hybrid/Toyota RAV4 Hybrid.jpeg"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+
 
 function Newcards() {
     const activeCard = useSelector((state) => state.card.activeCard);
@@ -99,6 +102,8 @@ function Newcards() {
 
     const states = useStoreState();
     const langData = useMemo(() => locale[states.lang], [states.lang]);
+    const [showMenu, setShowMenu] = useState(false);
+
 
 
     const Hatchback = [
@@ -196,6 +201,56 @@ function Newcards() {
     ]
     return (
         <div className='Newcards'>
+            <button className="menu-iconn" onClick={() => setShowMenu(!showMenu)}>
+                <FontAwesomeIcon icon={showMenu ? faTimes : faBars} className='icon' />
+            </button>
+
+            <div className={`left-card-mobile ${showMenu ? 'open' : ''}`}>
+                <button
+                    onClick={() => handleCardClick('sedan')}
+                    style={{ color: activeCard === 'sedan' ? 'white' : 'grey' }}
+                >
+                    Sedan
+                </button>
+                <button
+                    onClick={() => handleCardClick('hatchback')}
+                    style={{ color: activeCard === 'hatchback' ? 'white' : 'grey' }}
+                >
+                    Hatchback
+                </button>
+                <button
+                    onClick={() => handleCardClick('coupe')}
+                    style={{ color: activeCard === 'coupe' ? 'white' : 'grey' }}
+                >
+                    Coupe
+                </button>
+                <button
+                    onClick={() => handleCardClick('pickup-truck')}
+                    style={{ color: activeCard === 'pickup-truck' ? 'white' : 'grey' }}
+                >
+                    Pickup Truck
+                </button>
+                <button
+                    onClick={() => handleCardClick('luxury-car')}
+                    style={{ color: activeCard === 'luxury-car' ? 'white' : 'grey' }}
+                >
+                    Luxury Car
+                </button>
+                <button
+                    onClick={() => handleCardClick('electric-vehicle')}
+                    style={{ color: activeCard === 'electric-vehicle' ? 'white' : 'grey' }}
+                >
+                    Electric Vehicle
+                </button>
+                <button
+                    onClick={() => handleCardClick('hybrid-car')}
+                    style={{ color: activeCard === 'hybrid-car' ? 'white' : 'grey' }}
+                >
+                    Hybrid Car
+                </button>
+            </div>
+
+
             <div className="left-card">
                 <button
                     onClick={() => handleCardClick('sedan')}
@@ -241,6 +296,7 @@ function Newcards() {
                 </button>
             </div>
             <div className="right-card">
+
                 {activeCard === 'sedan' && (
                     <div className="Sedan">
                         <div className="sedan-cart">
@@ -255,6 +311,7 @@ function Newcards() {
                         </div>
                     </div>
                 )}
+                
                 {activeCard === 'hatchback' && (
                     <div className="Hatchback">
                         <div className="hatchback-card">

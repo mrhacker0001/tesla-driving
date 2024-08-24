@@ -6,6 +6,14 @@
     padding-top: 8dvh;
 }
 
+.left-card-mobile {
+    display: none;
+}
+
+.menu-iconn {
+    display: none;
+}
+
 button {
     cursor: pointer;
 }
@@ -512,4 +520,1601 @@ button {
 
 .hybrids img:hover {
     transform: scale(1.05);
+}
+
+
+
+
+@media (max-width:1550px) {
+    .sedans {
+        width: 20dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sedans img {
+        width: 100%;
+        height: 17dvh;
+    }
+
+    .sedans h2 {
+        font-size: 22px;
+    }
+
+    .sedans span {
+        font-size: 16px;
+    }
+
+    .sedans button {
+        font-size: 18px;
+    }
+
+    .sedans button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+    .hatchbacks {
+        width: 20dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hatchbacks img {
+        width: 100%;
+        height: 17dvh;
+    }
+
+    .hatchbacks h2 {
+        font-size: 22px;
+    }
+
+    .hatchbacks span {
+        font-size: 16px;
+    }
+
+    .hatchbacks button {
+        font-size: 18px;
+    }
+
+    .hatchbacks button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+
+    .coupes {
+        width: 20dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coupes img {
+        width: 100%;
+        height: 17dvh;
+    }
+
+    .coupes h2 {
+        font-size: 22px;
+    }
+
+    .coupes span {
+        font-size: 16px;
+    }
+
+    .coupes button {
+        font-size: 18px;
+    }
+
+    .coupes button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+
+    .pickups {
+        width: 20dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pickups img {
+        width: 100%;
+        height: 17dvh;
+    }
+
+    .pickups h2 {
+        font-size: 22px;
+    }
+
+    .pickups span {
+        font-size: 16px;
+    }
+
+    .pickups button {
+        font-size: 18px;
+    }
+
+    .pickups button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+
+    .luxuries {
+        width: 20dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .luxuries img {
+        width: 100%;
+        height: 17dvh;
+    }
+
+    .luxuries h2 {
+        font-size: 22px;
+    }
+
+    .luxuries span {
+        font-size: 16px;
+    }
+
+    .luxuries button {
+        font-size: 18px;
+    }
+
+    .luxuries button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+
+    .electrics {
+        width: 20dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .electrics img {
+        width: 100%;
+        height: 17dvh;
+    }
+
+    .electrics h2 {
+        font-size: 22px;
+    }
+
+    .electrics span {
+        font-size: 16px;
+    }
+
+    .electrics button {
+        font-size: 18px;
+    }
+
+    .electrics button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+    .hybrids {
+        width: 20dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hybrids img {
+        width: 100%;
+        height: 17dvh;
+    }
+
+    .hybrids h2 {
+        font-size: 22px;
+    }
+
+    .hybrids span {
+        font-size: 16px;
+    }
+
+    .hybrids button {
+        font-size: 18px;
+    }
+
+    .hybrids button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+}
+
+
+
+@media (max-width:1500px) {
+    .sedans {
+        width: 25dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sedans img {
+        width: 100%;
+        height: 23dvh;
+    }
+
+    .sedans h2 {
+        font-size: 22px;
+    }
+
+    .sedans span {
+        font-size: 16px;
+    }
+
+    .sedans button {
+        font-size: 18px;
+    }
+
+    .sedans button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+
+    .hatchbacks {
+        width: 25dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hatchbacks img {
+        width: 100%;
+        height: 23dvh;
+    }
+
+    .hatchbacks h2 {
+        font-size: 22px;
+    }
+
+    .hatchbacks span {
+        font-size: 16px;
+    }
+
+    .hatchbacks button {
+        font-size: 18px;
+    }
+
+    .hatchbacks button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+
+    .coupes {
+        width: 25dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coupes img {
+        width: 100%;
+        height: 23dvh;
+    }
+
+    .coupes h2 {
+        font-size: 22px;
+    }
+
+    .coupes span {
+        font-size: 16px;
+    }
+
+    .coupes button {
+        font-size: 18px;
+    }
+
+    .coupes button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+    .pickups {
+        width: 25dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pickups img {
+        width: 100%;
+        height: 23dvh;
+    }
+
+    .pickups h2 {
+        font-size: 22px;
+    }
+
+    .pickups span {
+        font-size: 16px;
+    }
+
+    .pickups button {
+        font-size: 18px;
+    }
+
+    .pickups button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+    .luxuries {
+        width: 25dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .luxuries img {
+        width: 100%;
+        height: 23dvh;
+    }
+
+    .luxuries h2 {
+        font-size: 22px;
+    }
+
+    .luxuries span {
+        font-size: 16px;
+    }
+
+    .luxuries button {
+        font-size: 18px;
+    }
+
+    .luxuries button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+
+    .electrics {
+        width: 25dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .electrics img {
+        width: 100%;
+        height: 23dvh;
+    }
+
+    .electrics h2 {
+        font-size: 22px;
+    }
+
+    .electrics span {
+        font-size: 16px;
+    }
+
+    .electrics button {
+        font-size: 18px;
+    }
+
+    .electrics button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+
+    .hybrids {
+        width: 25dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hybrids img {
+        width: 100%;
+        height: 23dvh;
+    }
+
+    .hybrids h2 {
+        font-size: 22px;
+    }
+
+    .hybrids span {
+        font-size: 16px;
+    }
+
+    .hybrids button {
+        font-size: 18px;
+    }
+
+    .hybrids button img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+}
+
+@media (max-width:1350px) {
+    .sedans {
+        width: 23dvw;
+        height: 45dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sedans img {
+        width: 100%;
+        height: 20dvh;
+    }
+
+    .sedans span {
+        width: 100%;
+    }
+
+    .hatchbacks {
+        width: 23dvw;
+        height: 45dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hatchbacks img {
+        width: 100%;
+        height: 20dvh;
+    }
+
+    .hatchbacks span {
+        width: 100%;
+    }
+
+
+    .coupes {
+        width: 23dvw;
+        height: 45dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coupes img {
+        width: 100%;
+        height: 20dvh;
+    }
+
+    .coupes span {
+        width: 100%;
+    }
+
+    .pickups {
+        width: 23dvw;
+        height: 45dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pickups img {
+        width: 100%;
+        height: 20dvh;
+    }
+
+    .pickups span {
+        width: 100%;
+    }
+
+    .luxuries {
+        width: 23dvw;
+        height: 45dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .luxuries img {
+        width: 100%;
+        height: 20dvh;
+    }
+
+    .luxuries span {
+        width: 100%;
+    }
+
+    .electrics {
+        width: 23dvw;
+        height: 45dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .electrics img {
+        width: 100%;
+        height: 20dvh;
+    }
+
+    .electrics span {
+        width: 100%;
+    }
+
+    .hybrids {
+        width: 23dvw;
+        height: 45dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hybrids img {
+        width: 100%;
+        height: 20dvh;
+    }
+
+    .hybrids span {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width:1270px) {
+    .sedans {
+        width: 23dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sedans button {
+        margin-top: 0;
+    }
+
+    .hatchbacks {
+        width: 23dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hatchbacks button {
+        margin-top: 0;
+    }
+
+
+    .coupes {
+        width: 23dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coupes button {
+        margin-top: 0;
+    }
+
+    .pickups {
+        width: 23dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pickups button {
+        margin-top: 0;
+    }
+
+    .luxuries {
+        width: 23dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .luxuries button {
+        margin-top: 0;
+    }
+
+    .electrics {
+        width: 23dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .electrics button {
+        margin-top: 0;
+    }
+
+    .hybrids {
+        width: 23dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hybrids button {
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width:1270px) {
+
+    .sedans {
+        width: 30dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .sedans img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .sedans button {
+        margin-top: 3dvh;
+    }
+
+
+    .hatchbacks {
+        width: 30dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .hatchbacks img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .hatchbacks button {
+        margin-top: 3dvh;
+    }
+
+
+    .coupes {
+        width: 30dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .coupes img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .coupes button {
+        margin-top: 3dvh;
+    }
+
+    .pickups {
+        width: 30dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .pickups img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .pickups button {
+        margin-top: 3dvh;
+    }
+
+    .luxuries {
+        width: 30dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .luxuries img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .luxuries button {
+        margin-top: 3dvh;
+    }
+
+    .electrics {
+        width: 30dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .electrics img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .electrics button {
+        margin-top: 3dvh;
+    }
+
+    .hybrids {
+        width: 30dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .hybrids img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .hybrids button {
+        margin-top: 3dvh;
+    }
+
+
+}
+
+@media (max-width:1050px) {
+
+    .sedans {
+        width: 35dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .sedans img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .sedans button {
+        margin-top: 3dvh;
+    }
+
+    .sedans button img {
+        width: 4dvw;
+    }
+
+    .hatchbacks {
+        width: 35dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .hatchbacks img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .hatchbacks button {
+        margin-top: 3dvh;
+    }
+
+    .hatchbacks button img {
+        width: 4dvw;
+    }
+
+    .coupes {
+        width: 35dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .coupes img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .coupes button {
+        margin-top: 3dvh;
+    }
+
+    .coupes button img {
+        width: 4dvw;
+    }
+
+    .pickups {
+        width: 35dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .pickups img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .pickups button {
+        margin-top: 3dvh;
+    }
+
+    .pickups button img {
+        width: 4dvw;
+    }
+
+    .luxuries {
+        width: 35dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .luxuries img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .luxuries button {
+        margin-top: 3dvh;
+    }
+
+    .luxuries button img {
+        width: 4dvw;
+    }
+
+    .electrics {
+        width: 35dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .electrics img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .electrics button {
+        margin-top: 3dvh;
+    }
+
+    .electrics button img {
+        width: 4dvw;
+    }
+
+    .hybrids {
+        width: 35dvw;
+        height: 48dvh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10dvw;
+    }
+
+    .hybrids img {
+        width: 100%;
+        height: 25dvh;
+    }
+
+    .hybrids button {
+        margin-top: 3dvh;
+    }
+
+    .hybrids button img {
+        width: 4dvw;
+    }
+}
+
+@media (max-width:1050px) {
+    .left-card {
+        display: none;
+    }
+
+
+
+    .left-card-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        width: 45dvw;
+        height: 65vh;
+        background: #333;
+        position: fixed;
+        left: 0dvw;
+        top: 15dvh;
+        z-index: 1;
+        transform: translateX(-45dvw);
+        transition: transform 0.5s ease-in-out;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .left-card-mobile button {
+        width: 30dvw;
+        height: 7dvh;
+        background: none;
+        border: none;
+        font-size: 22px;
+    }
+
+    .menu-iconn {
+        display: block;
+        width: 5dvw;
+        height: 5dvh;
+        background: none;
+        border: none;
+        color: #fff;
+        top: 9dvh;
+        position: fixed;
+    }
+
+    .left-card-mobile.open {
+        transform: translateX(0);
+    }
+
+    .right-card {
+        width: 100dvw;
+        height: auto;
+        margin-left: 5dvw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sedans {
+        width: 35dvw;
+        margin-left: 0dvw;
+    }
+
+
+    .hatchbacks {
+        width: 35dvw;
+        margin-left: 0dvw;
+    }
+
+    .coupes {
+        width: 35dvw;
+        margin-left: 0dvw;
+    }
+
+    .pickups {
+        width: 35dvw;
+        margin-left: 0dvw;
+    }
+
+    .luxuries {
+        width: 35dvw;
+        margin-left: 0dvw;
+    }
+
+    .electrics {
+        width: 35dvw;
+        margin-left: 0dvw;
+    }
+
+    .hybrids {
+        width: 35dvw;
+        margin-left: 0dvw;
+    }
+}
+
+
+@media (max-width:900px) {
+
+
+
+
+    .left-card-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        width: 55dvw;
+        height: 65vh;
+        background: #333;
+        position: fixed;
+        left: 0dvw;
+        top: 15dvh;
+        z-index: 1;
+        transform: translateX(-55dvw);
+        transition: transform 0.5s ease-in-out;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .left-card-mobile button {
+        width: 30dvw;
+        height: 7dvh;
+        background: none;
+        border: none;
+        font-size: 20px;
+    }
+
+
+
+    .sedans {
+        width: 34dvw;
+        height: 45dvh;
+    }
+
+    .hatchbacks {
+        width: 34dvw;
+        height: 45dvh;
+    }
+
+    .coupes {
+        width: 34dvw;
+        height: 45dvh;
+    }
+
+    .pickups {
+        width: 34dvw;
+        height: 45dvh;
+    }
+
+    .luxuries {
+        width: 34dvw;
+        height: 45dvh;
+    }
+
+    .electrics {
+        width: 34dvw;
+        height: 45dvh;
+    }
+
+    .hybrids {
+        width: 34dvw;
+        height: 45dvh;
+    }
+}
+
+@media (max-width:820px) {
+    .sedans {
+        width: 47dvw;
+        height: 50dvh;
+        margin-left: 5dvw;
+    }
+
+    .sedans img {
+        height: 25dvh;
+    }
+
+    .sedans button {
+        margin-top: 2dvh;
+    }
+
+    .hatchbacks {
+        width: 47dvw;
+        height: 50dvh;
+        margin-left: 5dvw;
+    }
+
+    .hatchbacks img {
+        height: 25dvh;
+    }
+
+    .hatchbacks button {
+        margin-top: 2dvh;
+    }
+
+
+    .coupes {
+        width: 47dvw;
+        height: 50dvh;
+        margin-left: 5dvw;
+    }
+
+    .coupes img {
+        height: 25dvh;
+    }
+
+    .coupes button {
+        margin-top: 2dvh;
+    }
+
+    .pickups {
+        width: 47dvw;
+        height: 50dvh;
+        margin-left: 5dvw;
+    }
+
+    .pickups img {
+        height: 25dvh;
+    }
+
+    .pickups button {
+        margin-top: 2dvh;
+    }
+
+    .luxuries {
+        width: 47dvw;
+        height: 50dvh;
+        margin-left: 5dvw;
+    }
+
+    .luxuries img {
+        height: 25dvh;
+    }
+
+    .luxuries button {
+        margin-top: 2dvh;
+    }
+
+    .electrics {
+        width: 47dvw;
+        height: 50dvh;
+        margin-left: 5dvw;
+    }
+
+    .electrics img {
+        height: 25dvh;
+    }
+
+    .electrics button {
+        margin-top: 2dvh;
+    }
+
+    .hybrids {
+        width: 47dvw;
+        height: 50dvh;
+        margin-left: 5dvw;
+    }
+
+    .hybrids img {
+        height: 25dvh;
+    }
+
+    .hybrids button {
+        margin-top: 2dvh;
+    }
+
+}
+
+
+@media (max-width:700px) {
+    .sedans {
+        width: 55dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .sedans img {
+        height: 27dvh;
+    }
+
+    .sedans button {
+        margin-top: 2dvh;
+    }
+
+    .hatchbacks {
+        width: 55dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .hatchbacks img {
+        height: 27dvh;
+    }
+
+    .hatchbacks button {
+        margin-top: 2dvh;
+    }
+
+    .coupes {
+        width: 55dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .coupes img {
+        height: 27dvh;
+    }
+
+    .coupes button {
+        margin-top: 2dvh;
+    }
+
+    .pickups {
+        width: 55dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .pickups img {
+        height: 27dvh;
+    }
+
+    .pickups button {
+        margin-top: 2dvh;
+    }
+
+    .luxuries {
+        width: 55dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .luxuries img {
+        height: 27dvh;
+    }
+
+    .luxuries button {
+        margin-top: 2dvh;
+    }
+
+    .electrics {
+        width: 55dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .electrics img {
+        height: 27dvh;
+    }
+
+    .electrics button {
+        margin-top: 2dvh;
+    }
+
+    .hybrids {
+        width: 55dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .hybrids img {
+        height: 27dvh;
+    }
+
+    .hybrids button {
+        margin-top: 2dvh;
+    }
+}
+
+
+@media (max-width:600px) {
+    .sedans {
+        width: 60dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .sedans img {
+        height: 27dvh;
+    }
+
+    .sedans button {
+        margin-top: 2dvh;
+    }
+
+    .hatchbacks {
+        width: 60dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .hatchbacks img {
+        height: 27dvh;
+    }
+
+    .hatchbacks button {
+        margin-top: 2dvh;
+    }
+
+    .coupes {
+        width: 60dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .coupes img {
+        height: 27dvh;
+    }
+
+    .coupes button {
+        margin-top: 2dvh;
+    }
+
+    .pickups {
+        width: 60dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .pickups img {
+        height: 27dvh;
+    }
+
+    .pickups button {
+        margin-top: 2dvh;
+    }
+
+    .luxuries {
+        width: 60dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .luxuries img {
+        height: 27dvh;
+    }
+
+    .luxuries button {
+        margin-top: 2dvh;
+    }
+
+    .electrics {
+        width: 60dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .electrics img {
+        height: 27dvh;
+    }
+
+    .electrics button {
+        margin-top: 2dvh;
+    }
+
+    .hybrids {
+        width: 60dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .hybrids img {
+        height: 27dvh;
+    }
+
+    .hybrids button {
+        margin-top: 2dvh;
+    }
+}
+
+@media (max-width:510px) {
+
+
+
+    .left-card-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        width: 65dvw;
+        height: 65vh;
+        background: #333;
+        position: fixed;
+        left: 0dvw;
+        top: 15dvh;
+        z-index: 1;
+        transform: translateX(-65dvw);
+        transition: transform 0.5s ease-in-out;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .left-card-mobile button {
+        width: 30dvw;
+        height: 7dvh;
+        background: none;
+        border: none;
+        font-size: 18px;
+    }
+
+    .sedans {
+        width: 65dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .sedans img {
+        height: 27dvh;
+    }
+
+    .sedans button {
+        margin-top: 2dvh;
+    }
+
+    .hatchbacks {
+        width: 65dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .hatchbacks img {
+        height: 27dvh;
+    }
+
+    .hatchbacks button {
+        margin-top: 2dvh;
+    }
+
+    .coupes {
+        width: 65dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .coupes img {
+        height: 27dvh;
+    }
+
+    .coupes button {
+        margin-top: 2dvh;
+    }
+
+    .pickups {
+        width: 65dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .pickups img {
+        height: 27dvh;
+    }
+
+    .pickups button {
+        margin-top: 2dvh;
+    }
+
+
+    .luxuries {
+        width: 65dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .luxuries img {
+        height: 27dvh;
+    }
+
+    .luxuries button {
+        margin-top: 2dvh;
+    }
+
+    .electrics {
+        width: 65dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .electrics img {
+        height: 27dvh;
+    }
+
+    .electrics button {
+        margin-top: 2dvh;
+    }
+
+    .hybrids {
+        width: 65dvw;
+        height: 50dvh;
+        margin-left: 0dvw;
+    }
+
+    .hybrids img {
+        height: 27dvh;
+    }
+
+    .hybrids button {
+        margin-top: 2dvh;
+    }
+
+
+
+}
+
+@media (max-width:500px) {
+
+
+
+    .left-card-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        width: 75dvw;
+        height: 65vh;
+        background: #333;
+        position: fixed;
+        left: 0dvw;
+        top: 15dvh;
+        z-index: 1;
+        transform: translateX(-75dvw);
+        transition: transform 0.5s ease-in-out;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .left-card-mobile button {
+        width: 50dvw;
+        height: 7dvh;
+        background: none;
+        border: none;
+        font-size: 18px;
+    }
+
+    .right-card {
+        padding: 15dvw 0;
+    }
+
+    .sedans {
+        width: 80dvw;
+        height: 55dvh;
+    }
+
+    .sedans img {
+        height: 28dvh;
+    }
+
+    .hatchbacks {
+        width: 80dvw;
+        height: 55dvh;
+    }
+
+    .hatchbacks img {
+        height: 28dvh;
+    }
+
+
+    .coupes {
+        width: 80dvw;
+        height: 55dvh;
+    }
+
+    .coupes img {
+        height: 28dvh;
+    }
+
+    .pickups {
+        width: 80dvw;
+        height: 55dvh;
+    }
+
+    .pickups img {
+        height: 28dvh;
+    }
+
+    .luxuries {
+        width: 80dvw;
+        height: 55dvh;
+    }
+
+    .luxuries img {
+        height: 28dvh;
+    }
+
+    .electrics {
+        width: 80dvw;
+        height: 55dvh;
+    }
+
+    .electrics img {
+        height: 28dvh;
+    }
+
+    .hybrids {
+        width: 80dvw;
+        height: 55dvh;
+    }
+
+    .hybrids img {
+        height: 28dvh;
+    }
+
 }

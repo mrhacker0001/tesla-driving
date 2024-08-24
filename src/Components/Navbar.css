@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.navbar-media {
+    display: none;
 }
 
 .Navbar {
@@ -35,7 +41,7 @@
     height: 100%;
     border: none;
     outline: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .search-panel img {
@@ -54,7 +60,7 @@
 .texts button {
     border: none;
     background: none;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     height: 7dvh;
 
@@ -67,20 +73,319 @@
     border-bottom: 3px solid #333;
 }
 
-.texts img{
+.texts img {
     width: 200px;
     height: 8dvh;
 }
 
-.texts button{
+.texts button {
     color: black;
 }
 
-.language{
-    width: 3dvw;
+.language {
+    width: 4dvw;
     height: 3dvh;
     padding: 0 8px;
     font-size: 16px;
     font-weight: 600;
     border-radius: 5px;
+}
+
+
+@media (max-width:1440px) {
+    .language {
+        width: 5dvw;
+        height: 3dvh;
+        padding: 0 8px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+    .texts button {
+        border: none;
+        background: none;
+        font-size: 16px;
+        cursor: pointer;
+        height: 7dvh;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .texts img {
+        width: 170px;
+        height: 8dvh;
+    }
+
+}
+
+@media (max-width:1265px) {
+    .texts button {
+        border: none;
+        background: none;
+        font-size: 14px;
+        cursor: pointer;
+        height: 7dvh;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .texts img {
+        width: 150px;
+        height: 8dvh;
+    }
+
+    .search-panel {
+        width: 25dvw;
+        height: 3dvh;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        gap: 4%;
+        border-radius: 10px;
+    }
+
+    .language {
+        width: 5dvw;
+        height: 3dvh;
+        padding: 0 8px;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+}
+
+
+@media (max-width:1110px) {
+    .texts img {
+        width: 120px;
+        height: 8dvh;
+    }
+
+    .texts button {
+        border: none;
+        background: none;
+        font-size: 12px;
+        cursor: pointer;
+        height: 7dvh;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .search-panel {
+        width: 27dvw;
+        height: 3dvh;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        gap: 4%;
+        border-radius: 10px;
+    }
+
+    .language {
+        width: 7dvw;
+        height: 3dvh;
+        padding: 0 8px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width:1110px) {
+    .Navbar {
+        display: none;
+    }
+
+    .navbar-media {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100dvw;
+        height: 8dvh;
+        background-color: #fff;
+        padding: 0 3dvw;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .navbar-media img {
+        width: 13dvw;
+        height: 8dvh;
+    }
+
+    .search-panel-media {
+        width: 30dvw;
+        height: 8dvh;
+        display: flex;
+        align-items: center;
+        gap: 2dvw;
+
+    }
+
+    .search-panel-media img {
+        width: 3dvw;
+        height: 3dvh;
+    }
+
+    .search-media {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-media input {
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+
+    .nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav button {
+        background: none;
+        border: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        gap: 40px;
+        padding-top: 50px;
+        width: 40dvw;
+        height: 60vh;
+        position: fixed;
+        right: 1dvw;
+        top: 8dvh;
+        z-index: 1;
+        transform: translateX(40dvw);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .mobile-menu.open {
+        transform: translateX(0);
+    }
+
+    .menu-icon {
+        border: none;
+        background: none;
+    }
+
+    .mobile-menu button {
+        width: 30dvw;
+        height: 5dvh;
+        font-size: 18px;
+        color: black;
+        border: none;
+        background: none;
+    }
+}
+
+@media (max-width:858px) {
+    .search-panel-media {
+        width: 40dvw;
+        height: 8dvh;
+        display: flex;
+        align-items: center;
+        gap: 2dvw;
+        padding-right: 10dvw;
+
+    }
+}
+
+@media (max-width:800px) {
+    .search-media {
+        display: flex;
+        align-items: center;
+        gap: 1dvw;
+    }
+
+    .navbar-media img {
+        width: 20dvw;
+    }
+
+    .search-media input {
+        width: 15dvw;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    .search-media img {
+        width: 2dvw;
+        height: 2dvh;
+    }
+
+
+}
+
+
+@media (max-width:600px) {
+    .search-media input {
+        width: 22dvw;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    .search-media img {
+        width: 4dvw;
+        height: 2.5dvh;
+    }
+}
+
+@media (max-width:600px) {
+    .search-media input {
+        width: 27dvw;
+        height: 5dvh;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 18px;
+    }
+
+    .search-media img {
+        width: 5dvw;
+        height: 2.5dvh;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    .search-media {
+        display: flex;
+        align-items: center;
+        gap: 2dvw;
+    }
+
+    .search-media input {
+        width: 30dvw;
+        height: 5dvh;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 18px;
+    }
+
+    .search-media img {
+        width: 5dvw;
+        height: 2.5dvh;
+    }
 }
